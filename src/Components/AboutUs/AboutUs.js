@@ -22,11 +22,10 @@ function AboutUs(){
             <div class="about-col">
             
             <Player
-            id="img"
                 autoplay
                 loop
                 src="https://assets3.lottiefiles.com/packages/lf20_0bzu9jvt.json"
-                style={{ height: '300px', width: '600px' }}>
+                style={{width: '100%' }}>
             </Player>
                 </div>
         </div>
