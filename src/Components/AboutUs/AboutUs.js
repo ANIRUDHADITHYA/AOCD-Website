@@ -1,8 +1,7 @@
 import {Link} from "react-router-dom";
-import AboutUsImage from './../Images/89108-about-us.json';
 import './AboutUs.css';
 
-import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import { Player } from '@lottiefiles/react-lottie-player';
 
 
 function AboutUs(){
