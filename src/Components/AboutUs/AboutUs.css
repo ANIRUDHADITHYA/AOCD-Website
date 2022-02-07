@@ -21,7 +21,7 @@
     flex-basis: 48%;
     padding: 30px 2px;    
 }
-.about-col img{
+.about-col #img{
     width:90%;
     border-radius: 5px;
 }
