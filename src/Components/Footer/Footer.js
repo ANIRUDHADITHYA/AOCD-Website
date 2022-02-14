@@ -6,7 +6,7 @@ function Footer(){
         <section className="footer-container">
             <div className="footer-row">
                 <div class="footer-col">
-                    <h1>AOPMDB</h1>
+                    <h1>AOMDB</h1>
                     <p>An extensive Repository unveiling the Plant Based Compounds targeting obesity by 
                         providing intricate information about various insiico parameters all at once</p>
                 </div>

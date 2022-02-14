@@ -13,7 +13,7 @@ function AboutUs(){
         <div class="row">
             <div class="about-col">
                 <h1>ABOUT <span>US</span></h1>
-                <p>AOPMdb delivers a comprehensive resource on botanicals isolated from plant source(s) and its classification. 
+                <p>AOMDB delivers a comprehensive resource on botanicals isolated from plant source(s) and its classification. 
                     It provides extensive information on physicochemical descriptors, 
                     pharmacokinetic properties, Drug like nature, Computational toxicity prediction, 
                     Lipophilic properties of compounds to support drug discovery.</p>
@@ -22,11 +22,10 @@ function AboutUs(){
             <div class="about-col">
             
             <Player
-            id="img"
                 autoplay
                 loop
                 src="https://assets3.lottiefiles.com/packages/lf20_0bzu9jvt.json"
-                style={{ height: '300px', width: '600px' }}>
+                style={{width: '100%' }}>
             </Player>
                 </div>
         </div>

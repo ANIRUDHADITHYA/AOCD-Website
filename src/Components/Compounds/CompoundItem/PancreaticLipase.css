@@ -1,0 +1,91 @@
+.PL-content h1,
+.PL-content h6,
+.PL-content h4,
+.PL-content h3,
+.PL-content p {
+display: inline;
+}
+.PL-content{
+    cursor: pointer;
+    margin: 10px;
+    padding: 20px 30px;
+    background-color: rgb(255, 255, 255);
+    color: #777;
+    border: 2px solid yellowgreen;
+    border-radius: 5px;
+    font-size: 17px;
+    text-align:start;
+}
+
+.PL-content h3{
+    color: #1884ac;
+    padding-bottom: 10px;
+}
+
+.compound-name{
+    padding-bottom: 10px;
+}
+.PL-content h4{
+    color: rgb(100, 100, 100);
+}
+.compound-footer{
+    padding-top: 10px;
+    color: #1884ac;
+    font-weight:600;
+    text-transform: capitalize;
+
+}
+.compound-footer p{
+    font-size: 15px;
+}
+.compound-footer p:hover{
+    text-decoration: underline;
+}
+
+.compound-details{
+    padding-bottom: 1px;
+    border-bottom: 1px solid rgb(233, 233, 233);
+}
+.compound-heading{
+    border-bottom: 1px solid rgb(233, 233, 233);
+    padding-bottom: 5px;
+}
+.compound-heading span h4{
+    color: palevioletred;
+}
+.compound-split-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.compound-split{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.image-container{
+    flex: 1;
+}
+table, th, td {
+    border: 2px solid #777;
+    border-collapse: collapse;
+}
+th{
+    padding: 7px;
+}
+.dowload-section {
+    text-align: center;
+    padding: 5px;
+    font-weight: 600;
+}
+.dowload-section:hover{
+    background-color: rgb(201, 200, 200);
+}
+.dowload-section i{
+    color: yellowgreen;
+}
+.table-heading{
+    color: #1884ac;
+    font-size: larger;
+}

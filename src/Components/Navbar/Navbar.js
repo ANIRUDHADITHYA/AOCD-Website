@@ -3,8 +3,9 @@ import {Link} from "react-router-dom";
 import './Navbar.css';
 
 
-function Navbar() {
+const Navbar = (props) => {
 
+    
     const [click,setClick] = useState(false);    
     const closeMobileMenu = () => {
         setClick(false);
@@ -19,6 +20,7 @@ function Navbar() {
             behavior: 'smooth'
         });
     }
+    
     const scrollTop =() => {
         window.scroll({top:0, behavior: 'smooth'})
     }
@@ -30,14 +32,16 @@ function Navbar() {
             setColorchange(false);
         }
         };
+    
     window.addEventListener('scroll', changeNavbarColor);
-
+        
+    
     return (
         <>
         <nav className="navbar">
-            <div className={colorChange ? 'colorChange' : 'defaultcolor'}>
+            <div className={props.colors || colorChange ? 'colorChange' : 'defaultcolor'}>
             <div className="navbar-container">
-                <Link to='/' className="navbar-logo" onClick={scrollTop}>AOPMDB<i class="fab fa-pagelines"></i></Link>
+                <Link to='/' className="navbar-logo" onClick={scrollTop}>AOMDB<i class="fab fa-pagelines"></i></Link>
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                 </div>

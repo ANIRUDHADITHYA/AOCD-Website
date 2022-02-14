@@ -7,7 +7,7 @@ function Downloads() {
 	return (
 		<div className="downloads">
             <div className="downloads-header">
-                <Navbar />
+            <Navbar/>
                 <div className='downloads-heading'>
                     <h1>Downloads</h1>
                 </div>

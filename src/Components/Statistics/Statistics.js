@@ -7,7 +7,7 @@ function Statistics() {
 	return (
 		<div className="statistics">
             <div className="statistics-header">
-                <Navbar />
+                <Navbar/>
                 <div className='statistics-heading'>
                     <h1>Statistics</h1>
                 </div>

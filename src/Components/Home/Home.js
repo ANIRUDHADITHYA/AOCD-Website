@@ -18,10 +18,10 @@ function Home() {
                     <h1>
                         <Typewriter
                         options={{
-                            strings: ['Hi, Welcome to AOPMDB', 'Antiobesity Plant Metabolite Database','Get Started Now'],
+                            strings: ['Hi, Welcome to AOMDB', 'Antiobesity Metabolite Database'],
                             autoStart: true,
                             loop: true,
-                            delay:200,
+                            delay:100,
                         }}
                         />
                     </h1>
@@ -30,9 +30,11 @@ function Home() {
                 <SearchBar placeholder={placeholderName}/>
                 <div className='available-lable'>
                     <div className='lable-container'>
-                        <h6><i class="fas fa-atom"></i> 202</h6>
-                        <span className="lable-container">|</span>
-                        <h6><i class="fas fa-book-reader"></i> 303</h6>
+                        <div className="lable-item"><h6>101</h6><p>Compounds</p></div>
+                        <div className="lable-item"><h6>202</h6><p>Literature</p></div>
+                        <div className="lable-item"><h6>555</h6><p>Plants</p></div>
+                        <div className="lable-item"><h6>303</h6><p>Microbial Source</p></div>
+                        <div className="lable-item"><h6>444</h6><p>Seaweed</p></div>                        
                     </div>
                 </div>
             </div>

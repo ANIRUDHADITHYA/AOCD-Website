@@ -8,14 +8,14 @@ function AboutUsKnowMore(){
     return(
         <div className='aboutus-know-more'>
             <div className="aboutus-header">
-                <Navbar />
+                <Navbar/>
                 <div className='aboutus-heading'>
                     <h1>About <span>Us</span></h1>
                 </div>
             </div>
             <div className='aboutus-content'>
                 <p>
-                    AOPMdb delivers a comprehensive resource on botanicals isolated from plant source(s) 
+                    AOMDB delivers a comprehensive resource on botanicals isolated from plant source(s) 
                     and its classification. It provides extensive information on physicochemical 
                     descriptors, pharmacokinetic properties, Drug like nature, Computational toxicity prediction, 
                     Lipophilic properties of compounds to support drug discovery. Every compound in AOPMdb has 
