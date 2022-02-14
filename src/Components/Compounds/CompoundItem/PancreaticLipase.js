@@ -1,6 +1,6 @@
 import React from "react";
 import './PancreaticLipase.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import twod from '../../Images/AO002.png';
 import threed from '../../Images/AO001.png';
 
@@ -9,9 +9,8 @@ const PancreaticLipase = (props) => {
 
     
     const [expand, setExpand] = useState(false);
-    const [expandID, setExpandID] = useState(0);
 
-    const viewExpand = (id) =>{setExpand(!expand); setExpandID(id)};
+    const viewExpand = (id) =>{setExpand(!expand)};
 
 
 
