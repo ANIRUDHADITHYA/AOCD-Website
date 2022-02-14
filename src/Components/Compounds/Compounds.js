@@ -3,24 +3,21 @@ import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import './Compounds.css';
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { click } from "@testing-library/user-event/dist/click";
-import CompoundItem from './CompoundItem/PancreaticLipase';
 import PancreaticLipase from "./CompoundItem/PancreaticLipase";
 const restEndpoint = "http://aopmdb-backend.herokuapp.com/db/";
 
-const callRestApi = async () => {
-    const response = await fetch(restEndpoint, {method: "GET", mode:'cors'});
-    const jsonResponse = await response.json();
-    console.log(jsonResponse);
-    return jsonResponse;
-};
+{/*const callRestApi = async () => {
+  const response = await fetch(restEndpoint, {method: "GET", mode:'cors'});
+  const jsonResponse = await response.json();
+  console.log(jsonResponse);
+  return jsonResponse;
+};*/}
 
 function Compounds() {
 
-  var url = "http://aopmdb-backend.herokuapp.com/db/";
+  {/*var url = "http://aopmdb-backend.herokuapp.com/db/";
 
-  const [currentCompound, setCurrentCompound] = useState("");
+const [currentCompound, setCurrentCompound] = useState("");*/}
   
   const [data, setData] = useState([]);
   const getData=()=>{
