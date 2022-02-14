@@ -6,19 +6,9 @@ import { useState, useEffect } from 'react';
 import PancreaticLipase from "./CompoundItem/PancreaticLipase";
 const restEndpoint = "http://aopmdb-backend.herokuapp.com/db/";
 
-{/*const callRestApi = async () => {
-  const response = await fetch(restEndpoint, {method: "GET", mode:'cors'});
-  const jsonResponse = await response.json();
-  console.log(jsonResponse);
-  return jsonResponse;
-};*/}
 
 function Compounds() {
 
-  {/*var url = "http://aopmdb-backend.herokuapp.com/db/";
-
-const [currentCompound, setCurrentCompound] = useState("");*/}
-  
   const [data, setData] = useState([]);
   const getData=()=>{
 
