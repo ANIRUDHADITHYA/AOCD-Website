@@ -82,6 +82,7 @@
     font-size: 40px;
     font-family: 'Roboto Mono', monospace;
     color: #28772f;
+    text-align: center;
 }
 .lable-item p{
     margin: auto;
@@ -90,6 +91,7 @@
     font-family: 'Roboto Mono', monospace;
     color: rgb(54, 54, 54);
     font-weight: 700;
+    text-align: center;
 
 }
 
@@ -104,18 +106,25 @@
         font-size: 32px;
     }
     .lable-item{
+        flex: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        flex-wrap: wrap;
+    }
+    .lable-container{
+        height: 100px;
     }
     .lable-container h6{
         font-size: 25px;
         color: #28772f;
+        text-align: center;
     }
     .lable-item p{
         font-size: 8px;
         padding: 0;
         color: rgb(54, 54, 54);
         font-weight: 700;
+        text-align: center;
     }
 }

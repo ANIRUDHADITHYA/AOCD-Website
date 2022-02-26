@@ -6,8 +6,37 @@ import Downloads from "./Components/Downloads/Downloads";
 import AboutUsKnowMore from "./Components/AboutUsKnowMore/AboutUsKnowMore";
 import ContactUs from "./Components/Footer/Footer";
 import Compounds from './Components/Compounds/Compounds';
+import ShowSummary from './Components/Compounds/ShowSummary/ShowSummary';
+import SearchCompounds from './Components/SearchBar/SearchCompound';
+import { useState, useEffect } from 'react';
+
+const restEndpoint = "http://aopmdb-backend.herokuapp.com/db/";
 
 function App() {
+
+  const [data, setData] = useState([]);
+
+  const getData=()=>{
+
+    fetch(restEndpoint)
+    .then(function(response){
+        console.log(response)
+        return response.json();
+    })
+    .then(function(myJson) {
+        console.log(myJson);
+
+        localStorage.setItem('data', JSON.stringify(myJson.data));
+
+        setData(myJson);
+    });
+
+    
+}
+useEffect(()=>{
+    getData()
+},[])
+
   return (
     <div>
       <Router>
@@ -17,7 +46,9 @@ function App() {
           <Route exact path="/downloads" component={Downloads}/>
           <Route exact path="/about-us" component={AboutUsKnowMore}/>
           <Route exact path="/contact-us" component={ContactUs}/>
-          <Route exact path="/compounds" component={Compounds}/>
+          <Route exact path="/compounds/:id" component={Compounds}/>
+          <Route exact path="/summary/:id" component={ShowSummary}/>
+          <Route exact path="/search" component={SearchCompounds}/>
 				</Switch>
 			</Router>
     </div>

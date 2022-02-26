@@ -23,15 +23,15 @@ function HomeMainContent () {
         <div class="row">
             <div class="img-col">
                 <img src={home1} alt='image1'/>
-                <Link to='/compounds'><div class="layer"><h3>Pancreatic Lipase- 93 Compounds</h3></div></Link>
+                <Link to='/compounds/PL'><div class="layer"><h3>Pancreatic Lipase- 93 Compounds</h3></div></Link>
             </div>
             <div class="img-col">
                 <img src={home2} alt='image2'/>
-                <Link to='/compounds'><div class="layer"><h3>Appetite Suppression- 88 Compounds</h3></div></Link>
+                <Link to='/compounds/AS'><div class="layer"><h3>Appetite Suppressant- 88 Compounds</h3></div></Link>
             </div>
             <div class="img-col">
                 <img src={home3} alt='image3'/>
-                <Link to='/compounds'><div class="layer"><h3>Adipogenesis- 49 Compounds</h3></div></Link>
+                <Link to='/compounds/AG'><div class="layer"><h3>Adipogenesis- 49 Compounds</h3></div></Link>
             </div>
         </div>
         </section>
