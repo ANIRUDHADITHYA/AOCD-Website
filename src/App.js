@@ -33,8 +33,10 @@ function App() {
 
     
 }
+console.log(data);
 useEffect(()=>{
     getData()
+    
 },[])
 
   return (

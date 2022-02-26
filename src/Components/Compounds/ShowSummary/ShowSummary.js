@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react';
-import twod from '../../Images/AO002.png';
-import threed from '../../Images/AO001.png';
 import './ShowSummary.css';
 import { useParams } from "react-router-dom";
 
@@ -31,7 +29,7 @@ function ShowSummary () {
     },[])
 
 
-
+    
 
 
     return(
@@ -41,7 +39,7 @@ function ShowSummary () {
                 <div className='compound-name'><h3>Compound Name: {data.compound_name}</h3></div>
                 <div className='compound-details'><h4>Accession No:</h4> <p className='access_id'>{data.accession_no}</p></div>
 
-                <div className='compound-details'><h4>PUBCHEM ID: </h4><p><a target='_blank' href={'https://pubchem.ncbi.nlm.nih.gov/#query='+data.pubchem_cid}>{data.pubchem_cid}</a></p></div>
+                <div className='compound-details'><h4>PUBCHEM ID: </h4><p><a rel="noreferrer" href={'https://pubchem.ncbi.nlm.nih.gov/#query='+data.pubchem_cid}>{data.pubchem_cid}</a></p></div>
                 <div className='compound-details'><h4>Molecular Formula: </h4><p>{data.molf}</p></div>
                 <div className='compound-details'><h4>Molecular Weight: </h4><p>{data.mw}</p></div>
                 <div className='compound-details'><h4>Mode of Action: </h4><p>{data.moa}</p></div>
@@ -72,7 +70,7 @@ function ShowSummary () {
                 <div className='compound-details'><h4>Toxicity Class: </h4><p>{data.toxicity}</p></div>
                 
                 <div className='compound-heading'><span><h4>Reference</h4></span></div>
-                <div className='compound-details'><h4>Reference Article DOI: </h4><p><a target='_blank' href={'https://dx.doi.org/'+data.ref_doi}>{data.ref_doi}</a></p></div>
+                <div className='compound-details'><h4>Reference Article DOI: </h4><p><a rel="noreferrer" href={'https://dx.doi.org/'+data.ref_doi}>{data.ref_doi}</a></p></div>
                 <div className='compound-details'><h4>Year of Publication: </h4><p>{data.yop}</p></div>
                 <div className='compound-details'><h4>Name of Journal: </h4><p>{data.jonl_name}</p></div>
             </div>

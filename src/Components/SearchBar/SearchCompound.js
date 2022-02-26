@@ -4,16 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import './SearchCompound.css';
 import { useState, useEffect } from 'react';
 import ShowLess from '../Compounds/ShowLess/ShowLess';
-import { useParams } from "react-router-dom";
-
-
-const restEndpoint = "http://aopmdb-backend.herokuapp.com/db/";
-
-
 function SearchCompounds() {
-
-const params = useParams();
-
 const [data, setData] = useState([]);
 const [filterNo , setFilter] = useState(0);
 const getFilter = (filterId) => {
@@ -24,7 +15,6 @@ const [key, setKey] = useState("");
 const getData=()=>{
 
     const db = JSON.parse(localStorage.getItem('data'));
-
     const params = new URLSearchParams(window.location.search);
     const key = params.get('key');
     setKey(key)
@@ -43,6 +33,7 @@ const getData=()=>{
 
     
 }
+console.log(key);
 useEffect(()=>{
     
     getData();
