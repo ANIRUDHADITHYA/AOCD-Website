@@ -27,7 +27,8 @@ function ShowSummary() {
     useEffect(()=>{
         getData()
     
-    })
+    
+    },[])
 
 
 
