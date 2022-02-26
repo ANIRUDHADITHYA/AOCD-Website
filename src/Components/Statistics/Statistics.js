@@ -103,7 +103,7 @@ function Statistics() {
         getData()
         getChartData()
 
-    },[])
+    })
 
 
 	return (
