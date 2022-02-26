@@ -33,11 +33,11 @@ function Statistics() {
         const chartItems = [["Molecular weight Range", "No. of compounds"], ["100-200", 0], ["200-300", 0], ["300-400", 0], ["400-500", 0], ["500-600", 0], ["600-700", 0], ["700-800", 0], ["800-900", 0], ["900-1000", 0], ["1000-1100", 0], ["1100-1200", 0], ["1200-1300", 0], ["1300-1400", 0],  ["1400-1500", 0]];
         const Items = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
         
-        {
-            data.data && data.data.length>0 && data.data.map((item, index)=>
-            Items[getRangeMW(item.mw)-1] += 1)
         
-        }
+        data.data && data.data.length>0 && data.data.map((item, index)=>
+        Items[getRangeMW(item.mw)-1] += 1)
+        
+        
         console.log(Items);
 
         chartItems[1][1] = Items[0]; 
@@ -103,7 +103,7 @@ function Statistics() {
         getData()
         getChartData()
 
-    },[])
+    })
 
 
 	return (

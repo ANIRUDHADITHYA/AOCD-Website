@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 const restEndpoint = "http://aopmdb-backend.herokuapp.com/db/";
 
 
-function ShowSummary () {
+function ShowSummary() {
 
     const params = useParams();
 
@@ -26,10 +26,11 @@ function ShowSummary () {
     }
     useEffect(()=>{
         getData()
-    },[])
-
-
     
+    })
+
+
+
 
 
     return(
