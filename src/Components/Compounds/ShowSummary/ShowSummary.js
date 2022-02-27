@@ -2,26 +2,17 @@ import { useState, useEffect } from 'react';
 import './ShowSummary.css';
 import { useParams } from "react-router-dom";
 
-const restEndpoint = "http://aopmdb-backend.herokuapp.com/db/";
-
-
 function ShowSummary() {
 
     const params = useParams();
 
     const [data, setData] = useState([]);
+
+    
+
     const getData=()=>{
 
-        fetch(restEndpoint)
-        .then(function(response){
-            console.log(response)
-            return response.json();
-        })
-        .then(function(myJson) {
-            console.log(myJson.data[params.id]);
-            setData(myJson.data[params.id])
-        });
-
+        setData(JSON.parse(localStorage.getItem('data'))[params.id]);
         
     }
     useEffect(()=>{

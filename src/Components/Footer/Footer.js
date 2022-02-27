@@ -7,8 +7,9 @@ function Footer(){
             <div className="footer-row">
                 <div class="footer-col">
                     <h1>AOMDB</h1>
-                    <p>An extensive Repository unveiling the Plant Based Compounds targeting obesity by 
-                        providing intricate information about various insiico parameters all at once</p>
+                    <p>An extensive Repository unveiling Natural Compounds isolated from Plants, Microbes 
+                        and Marine targeting obesity by providing intricate information about various 
+                        insiico parameters and also its biological activity all at once</p>
                 </div>
                 <div class="footer-col">
                     <h1>Contact Us</h1>

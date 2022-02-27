@@ -7,8 +7,6 @@ import ShowLess from "./ShowLess/ShowLess";
 import { useParams } from "react-router-dom";
 
 
-const restEndpoint = "http://aopmdb-backend.herokuapp.com/db/";
-
 
 function Compounds() {
 
@@ -17,31 +15,27 @@ function Compounds() {
 
   const [data, setData] = useState([]);
 
-  const [key, setKey] = useState("");
   const [filterNo , setFilter] = useState( params.id === 'PL' ? 1 : params.id === 'AS' ? 2 : params.id === 'AG' ? 3 : 0);
   const getFilter = (filterId) => {
     setFilter(filterId)
   }
   const getData=()=>{
 
-    fetch(restEndpoint)
-      .then(function(response){
-        console.log(response)
-        return response.json();
-      })
-      .then(function(myJson) {
-        console.log(myJson);
-        setData(myJson)
-      });
+    // fetch(restEndpoint)
+    //   .then(function(response){
+    //     console.log(response)
+    //     return response.json();
+    //   })
+    //   .then(function(myJson) {
+    //     console.log(myJson);
+    //     setData(myJson)
+    //   });
 
+      setData(JSON.parse(localStorage.getItem('data')))
     
   }
   useEffect(()=>{
     getData()
-
-    const params = new URLSearchParams(window.location.search);
-    const key = params.get('key');
-    setKey(key);
 
   },[])
 
@@ -53,7 +47,7 @@ function Compounds() {
             </div>
             
             <div className='compounds-content'> {/*data.data && data.data.length>0 && data.data.map((item)=><p>{item.compound_name}</p>)*/}
-              <div className="title"><h1>Compound Details {key}</h1><hr/></div>
+              <div className="title"><h1>Repository</h1><hr/></div>
               <>
               <div className="data-container">
                 <div className='menubar-container'>
@@ -73,7 +67,7 @@ function Compounds() {
                 <div className="compound-container">
                   <div>
                   {
-                    data.data && data.data.length>0 && data.data.map((item, index)=><ShowLess compound={item} index={index} filter={filterNo}/>)
+                    data && data.length>0 && data.map((item, index)=><ShowLess compound={item} index={index} filter={filterNo}/>)
                   }
                   </div>
                 </div>

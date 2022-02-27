@@ -5,7 +5,8 @@ import HomeMainContent from "../MainContent/HomeMainContent";
 import AboutUs from '../AboutUs/AboutUs';
 import SearchBar from '../SearchBar/SearchBar';
 import './Home.css';
-import Typewriter from 'typewriter-effect';
+import TypeWriterEffect from 'react-typewriter-effect';
+
 
 function Home() {
     const placeholderName="Enter Accession NO/Compound Name/Pubchem ID/Smiles/Inchl/Plant Source";
@@ -16,14 +17,23 @@ function Home() {
                 <Navbar />
                 <div className='home-heading'>
                     <h1>
-                        <Typewriter
-                        options={{
-                            strings: ['Hi, Welcome to AOMDB', 'Antiobesity Metabolite Database'],
-                            autoStart: true,
-                            loop: true,
-                            delay:100,
+                    <TypeWriterEffect
+                        textStyle={{
+                            fontSize: "62px",    
+                            textAlign: "center",
+                            fontFamily: "'Rowdies', cursive",
+                            color: "#ffffff",
                         }}
-                        />
+                        startDelay={300}
+                        cursorColor="#3F3D56"
+                        multiText={[
+                        'Hi, Welcome to AOMDB',
+                        'Antiobesity Metabolite Database',
+                        ]}
+                        multiTextDelay={1500}
+                        typeSpeed={130}
+                        hideCursorAfterText={true}
+                    />
                     </h1>
                     <p>Browse me from today and let Obesity go away</p>
                 </div>
@@ -33,7 +43,7 @@ function Home() {
                         <div className="lable-item"><h6>349</h6><p>Compounds</p></div>
                         <div className="lable-item"><h6>349</h6><p>Literature</p></div>
                         <div className="lable-item"><h6>281</h6><p>Plants</p></div>
-                        <div className="lable-item"><h6>27</h6><p>Marine</p></div>
+                        <div className="lable-item"><h6>27</h6><p>Seaweed</p></div>
                         <div className="lable-item"><h6>13</h6><p>Microbes</p></div>                        
                     </div>
                 </div>

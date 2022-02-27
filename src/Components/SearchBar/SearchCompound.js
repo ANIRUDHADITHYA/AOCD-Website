@@ -5,44 +5,48 @@ import './SearchCompound.css';
 import { useState, useEffect } from 'react';
 import ShowLess from '../Compounds/ShowLess/ShowLess';
 import { Player } from '@lottiefiles/react-lottie-player';
+
+
 function SearchCompounds() {
 
 const [data, setData] = useState([]);
+const [filterNo , setFilter] = useState(0);
+const getFilter = (filterId) => {
+    setFilter(filterId)
+}
 
-const [key, setKey] = useState("");
 
 const getData=()=>{
 
     const db = JSON.parse(localStorage.getItem('data'));
     const params = new URLSearchParams(window.location.search);
-    const search_key = params.get('key');
-    setKey(search_key)
+    const search_key = params.get('q');
     console.log(search_key+"");
+    getFilter(0)
     const result = db.filter((item) =>
-			item.accession_no.toLowerCase() === (search_key.toLowerCase()) 
-            || item.compound_name.toLowerCase() === (search_key.toLowerCase()) 
-            || item.pubchem_cid.toLowerCase() === (search_key.toLowerCase()) 
-            || item.sci_name.toLowerCase() === (search_key.toLowerCase())
-            || item.iupac_name.toLowerCase() === (search_key.toLowerCase())
-            || item.canl_smiles.toLowerCase() === (search_key.toLowerCase())
-            || item.inchl.toLowerCase() === (search_key.toLowerCase())
-            || item.molf.toLowerCase() === (search_key.toLowerCase())
-            || item.moa.toLowerCase() === (search_key.toLowerCase())
+    item.accession_no.toLowerCase() === (search_key.toLowerCase()) 
+    || item.compound_name.toLowerCase() === (search_key.toLowerCase()) 
+    || item.pubchem_cid.toLowerCase() === (search_key.toLowerCase()) 
+    || item.sci_name.toLowerCase() === (search_key.toLowerCase())
+    || item.iupac_name.toLowerCase() === (search_key.toLowerCase())
+    || item.canl_smiles.toLowerCase() === (search_key.toLowerCase())
+    || item.inchl.toLowerCase() === (search_key.toLowerCase())
+    || item.molf.toLowerCase() === (search_key.toLowerCase())
+    || item.moa.toLowerCase() === (search_key.toLowerCase())
 
-            || item.accession_no.toLowerCase().includes(search_key.toLowerCase()) 
-            || item.compound_name.toLowerCase().includes(search_key.toLowerCase()) 
-            || item.pubchem_cid.toLowerCase().includes(search_key.toLowerCase()) 
-            || item.sci_name.toLowerCase().includes(search_key.toLowerCase())
-            || item.iupac_name.toLowerCase().includes(search_key.toLowerCase())
-            || item.canl_smiles.toLowerCase().includes(search_key.toLowerCase())
-            || item.inchl.toLowerCase().includes(search_key.toLowerCase())
-            || item.molf.toLowerCase().includes(search_key.toLowerCase())
-            || item.moa.toLowerCase().includes(search_key.toLowerCase())
-        
-		);
+    || item.accession_no.toLowerCase().includes(search_key.toLowerCase()) 
+    || item.compound_name.toLowerCase().includes(search_key.toLowerCase()) 
+    || item.pubchem_cid.toLowerCase().includes(search_key.toLowerCase()) 
+    || item.sci_name.toLowerCase().includes(search_key.toLowerCase())
+    || item.iupac_name.toLowerCase().includes(search_key.toLowerCase())
+    || item.canl_smiles.toLowerCase().includes(search_key.toLowerCase())
+    || item.inchl.toLowerCase().includes(search_key.toLowerCase())
+    || item.molf.toLowerCase().includes(search_key.toLowerCase())
+    || item.moa.toLowerCase().includes(search_key.toLowerCase())
     
+    );
+    console.log(result);
         
-    console.log(key);
     setData(result)
 
     
@@ -77,10 +81,10 @@ useEffect(()=>{
                             src="https://assets7.lottiefiles.com/packages/lf20_buhby0ug.json"
                             style={{width: '25%' }}>
                         </Player>
-                    ) :(data && data.length>0 && data.map((item, index)=><ShowLess compound={item} index={index} filter={null}/>))
+                    ) :(data && data.length>0 && data.map((item, index)=><ShowLess compound={item} index={index} filter={filterNo}/>))
 
-                    
-                    
+
+
                 }
                 </div>
                 </div>

@@ -9,7 +9,7 @@ function SearchBar({placeholder ,data}){
     const history = useHistory();
 
     function handleClick() {
-        history.push("/search?key=" + search);
+        history.push("/search?q=" + search);
         if (search === "") {
             setError("Enter Something.");
             return;
@@ -24,7 +24,7 @@ function SearchBar({placeholder ,data}){
                 return;
             }
     
-            history.push("/search?key=" + search);
+            history.push("/search?q=" + search);
             
             
         }

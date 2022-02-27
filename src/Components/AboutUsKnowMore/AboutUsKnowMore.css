@@ -37,8 +37,10 @@
     color: #1fa329;
 }
 .aboutus-content{
-
-    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px auto;
     width: 85%;
     text-align: justify;
     background-image: linear-gradient(rgba(198, 252, 153, 0.4),rgba(198,252,153,0.4));
@@ -48,9 +50,22 @@
     padding: 70px 50px;
     border-radius: 10px;
 }
+.au-container{
+    flex: 10;
+}
+.au-container-img{
+    flex: 7;
+    
+}
 @media(max-width: 960px){
     .aboutus-heading h1{
         font-size: 40px;
+    }
+    .aboutus-content{
+        flex-direction: column;
+    }
+    .au-container-img{
+        padding-top: 30px;
     }
     
 }
