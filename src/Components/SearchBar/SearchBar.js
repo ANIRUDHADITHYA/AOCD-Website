@@ -1,22 +1,21 @@
 import { useState } from "react";
 import './SearchBar.css';
+import { useHistory } from "react-router-dom";
 
 function SearchBar({placeholder ,data}){
 
     const [search, setSearch] = useState("");
     const [error, setError] = useState(null);
-    const onTodoSearch = async (event) => {
-		event.preventDefault();
+    const history = useHistory();
 
-
-		if (search === "") {
-			setError("Enter Something.");
-			return;
-		}
-
-        window.location = "/search?key=" + search;
-        console.log(search);
-	}
+    function handleClick() {
+        history.push("/search?key=" + search);
+        if (search === "") {
+            setError("Enter Something.");
+            return;
+        }
+    }
+    
     const handleEnter = (e) =>{
         console.log(error);
         if(e.key==='Enter') {
@@ -25,8 +24,8 @@ function SearchBar({placeholder ,data}){
                 return;
             }
     
-            window.location = "/search?key=" + e.target.value;
-            console.log(e.target.value);
+            history.push("/search?key=" + search);
+            
             
         }
     }
@@ -38,7 +37,7 @@ function SearchBar({placeholder ,data}){
 														setSearch(event.target.value)}
 													} onKeyPress={handleEnter}/>
                 <div className='searchIcon'>
-                <i className="fas fa-search"  onClick={onTodoSearch}></i>
+                <i className="fas fa-search"  onClick={handleClick}></i>
                 </div>
             </div>
             <div className='dataResults'></div>

@@ -5,7 +5,6 @@ import { useHistory } from "react-router-dom";
 const ShowLess = (props) => {
 
     const history = useHistory();
-
     function handleClick() {
     history.push("/summary/"+ props.index);
 }
