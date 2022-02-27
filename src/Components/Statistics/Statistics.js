@@ -103,7 +103,7 @@ function Statistics() {
         getData()
         getChartData()
 
-    })
+    },[])// eslint-disable-line react-hooks/exhaustive-deps
 
 
 	return (

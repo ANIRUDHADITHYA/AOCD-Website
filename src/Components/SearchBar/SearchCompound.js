@@ -16,8 +16,8 @@ const getData=()=>{
 
     const db = JSON.parse(localStorage.getItem('data'));
     const params = new URLSearchParams(window.location.search);
-    const key = params.get('key');
-    setKey(key)
+    const search_key = params.get('key');
+    setKey(search_key)
     const result = db.filter((item) =>
 			item.accession_no.toLowerCase().includes(key.toLowerCase()) 
             || item.compound_name.toLowerCase().includes(key.toLowerCase()) 
@@ -33,12 +33,12 @@ const getData=()=>{
 
     
 }
-console.log(key);
 useEffect(()=>{
     
     getData();
 
-},[])
+
+},[])// eslint-disable-line react-hooks/exhaustive-deps
 
 
     
