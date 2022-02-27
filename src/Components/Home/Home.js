@@ -18,12 +18,7 @@ function Home() {
                 <div className='home-heading'>
                     <h1>
                     <TypeWriterEffect
-                        textStyle={{
-                            fontSize: "62px",    
-                            textAlign: "center",
-                            fontFamily: "'Rowdies', cursive",
-                            color: "#ffffff",
-                        }}
+                        
                         startDelay={300}
                         cursorColor="#3F3D56"
                         multiText={[
