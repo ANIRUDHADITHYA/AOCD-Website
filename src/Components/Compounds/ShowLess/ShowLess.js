@@ -1,9 +1,5 @@
 import React from "react";
-import ReactDOM from 'react-dom';
-import ShowSummary from "../ShowSummary/ShowSummary";
 import './ShowLess.css';
-import { BrowserRouter } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
 const ShowLess = (props) => {
 
     const onSubmit = async (event) => {
