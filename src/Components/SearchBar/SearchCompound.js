@@ -4,12 +4,11 @@ import Navbar from "../Navbar/Navbar";
 import './SearchCompound.css';
 import { useState, useEffect } from 'react';
 import ShowLess from '../Compounds/ShowLess/ShowLess';
+import { Player } from '@lottiefiles/react-lottie-player';
 function SearchCompounds() {
+
 const [data, setData] = useState([]);
-const [filterNo , setFilter] = useState(0);
-const getFilter = (filterId) => {
-    setFilter(filterId)
-}
+
 const [key, setKey] = useState("");
 
 const getData=()=>{
@@ -18,17 +17,32 @@ const getData=()=>{
     const params = new URLSearchParams(window.location.search);
     const search_key = params.get('key');
     setKey(search_key)
+    console.log(search_key+"");
     const result = db.filter((item) =>
-			item.accession_no.toLowerCase().includes(key.toLowerCase()) 
-            || item.compound_name.toLowerCase().includes(key.toLowerCase()) 
-            || item.pubchem_cid.toLowerCase().includes(key.toLowerCase()) 
-            || item.sci_name.toLowerCase().includes(key.toLowerCase())
-            || item.iupac_name.toLowerCase().includes(key.toLowerCase())
-            || item.canl_smiles.toLowerCase().includes(key.toLowerCase())
-            || item.inchl.toLowerCase().includes(key.toLowerCase())
+			item.accession_no.toLowerCase() === (search_key.toLowerCase()) 
+            || item.compound_name.toLowerCase() === (search_key.toLowerCase()) 
+            || item.pubchem_cid.toLowerCase() === (search_key.toLowerCase()) 
+            || item.sci_name.toLowerCase() === (search_key.toLowerCase())
+            || item.iupac_name.toLowerCase() === (search_key.toLowerCase())
+            || item.canl_smiles.toLowerCase() === (search_key.toLowerCase())
+            || item.inchl.toLowerCase() === (search_key.toLowerCase())
+            || item.molf.toLowerCase() === (search_key.toLowerCase())
+            || item.moa.toLowerCase() === (search_key.toLowerCase())
+
+            || item.accession_no.toLowerCase().includes(search_key.toLowerCase()) 
+            || item.compound_name.toLowerCase().includes(search_key.toLowerCase()) 
+            || item.pubchem_cid.toLowerCase().includes(search_key.toLowerCase()) 
+            || item.sci_name.toLowerCase().includes(search_key.toLowerCase())
+            || item.iupac_name.toLowerCase().includes(search_key.toLowerCase())
+            || item.canl_smiles.toLowerCase().includes(search_key.toLowerCase())
+            || item.inchl.toLowerCase().includes(search_key.toLowerCase())
+            || item.molf.toLowerCase().includes(search_key.toLowerCase())
+            || item.moa.toLowerCase().includes(search_key.toLowerCase())
         
 		);
-    console.log(result);
+    
+        
+    console.log(key);
     setData(result)
 
     
@@ -40,7 +54,6 @@ useEffect(()=>{
 
 },[])// eslint-disable-line react-hooks/exhaustive-deps
 
-
     
 	return (
 		<div className="compounds">
@@ -49,33 +62,34 @@ useEffect(()=>{
             </div>
             
             <div className='compounds-content'> 
-            <div className="title"><h1>Compound Details</h1><hr/></div>
+            <div className="title"><h1>Search Results</h1><hr/></div>
             <>
             <div className="data-container">
-            <div className='menubar-container'>
-                <div className={(filterNo===0)?'menubar-filter-selected' : 'menubar-filter'} onClick={()=>getFilter(0)}>
-                    <h3>ALL</h3>
-                </div>
-                <div className={(filterNo===1)?'menubar-filter-selected' : 'menubar-filter'} onClick={()=>getFilter(1)}>
-                    <h3>Pancreatic Lipase</h3>
-                </div>
-                <div className={(filterNo===2)?'menubar-filter-selected' : 'menubar-filter'} onClick={()=>getFilter(2)}>
-                    <h3>Appetite Suppressant</h3>
-                </div>
-                <div className={(filterNo===3)?'menubar-filter-selected' : 'menubar-filter'} onClick={()=>getFilter(3)}>
-                    <h3>Adipogenesis</h3>
-                </div>
-                </div>
+            
                 <div className="compound-container">
                 <div>
                 {
-                    data && data.length>0 && data.map((item, index)=><ShowLess compound={item} index={index} filter={filterNo}/>)
+                    data.length === 0 ? (
+
+                        <Player
+                            autoplay
+                            loop
+                            src="https://assets7.lottiefiles.com/packages/lf20_buhby0ug.json"
+                            style={{width: '25%' }}>
+                        </Player>
+                    ) :(data && data.length>0 && data.map((item, index)=><ShowLess compound={item} index={index} filter={null}/>))
+
+                    
+                    
                 }
                 </div>
                 </div>
             </div>
             </>
             </div>
+
+
+            
             <Footer />
     </div>
 	);

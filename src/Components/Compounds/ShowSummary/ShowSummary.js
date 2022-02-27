@@ -46,7 +46,7 @@ function ShowSummary() {
                 <div className='compound-details'><h4>Molecular Weight: </h4><p>{data.mw}</p></div>
                 <div className='compound-details'><h4>Mode of Action: </h4><p>{data.moa}</p></div>
                 <div className='compound-details'><h4>Origin: </h4><p>{data.origin}</p></div>
-                <div className='compound-details'><h4>Scientific Name: </h4><p>{data.sci_name}</p></div>
+                <div className='compound-details'><h4>Scientific Name: </h4><p style={{fontStyle:"italic"}}>{data.sci_name}</p></div>
                 <div className='compound-details'><h4>Class of compounds: </h4><p>{data.class_comp}</p></div>
                 <div className='compound-details'><h4>Biological Activity</h4> <p>(IC50 values/ KI )</p><h4>: </h4><p>{data.bio_act}</p></div>
 

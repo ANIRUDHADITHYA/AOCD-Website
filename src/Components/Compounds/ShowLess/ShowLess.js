@@ -14,7 +14,7 @@ const ShowLess = (props) => {
             {
                 (props.filter===1) && (props.compound.filter_id==='PL' || props.compound.filter_id==='PL_AS_AG' || props.compound.filter_id==='PL_AS' || props.compound.filter_id==='PL_AG') ? (
                     <div className="showless-container">
-                        <div className='compound-name'><h3>{props.index+1}. Compound Name: {props.compound.compound_name}</h3></div>
+                        <div className='compound-name'><h3>Compound Name: {props.compound.compound_name}</h3></div>
                         <div className='compound-details'><h4>Accession No:</h4> <p className='access_id'>{props.compound.accession_no}</p></div>
                         <div className='compound-details'><h4>PUBCHEM ID: </h4><p><a rel="noreferrer" href={'https://pubchem.ncbi.nlm.nih.gov/#query='+props.compound.pubchem_cid}>{props.compound.pubchem_cid}</a></p></div>
                         <div className='compound-details'><h4>Molecular Formula: </h4><p>{props.compound.molf}</p></div>
@@ -25,7 +25,7 @@ const ShowLess = (props) => {
                         <div className="compound-footer" id="submit" onClick={handleClick}>Summary</div>
                     </div>) : (props.filter===2) && (props.compound.filter_id==='AS' || props.compound.filter_id==='PL_AS_AG' || props.compound.filter_id==='PL_AS' || props.compound.filter_id==='AS_AG') ? (
                     <div className="showless-container">
-                        <div className='compound-name'><h3>{props.index+1}. Compound Name: {props.compound.compound_name}</h3></div>
+                        <div className='compound-name'><h3>Compound Name: {props.compound.compound_name}</h3></div>
                         <div className='compound-details'><h4>Accession No:</h4> <p className='access_id'>{props.compound.accession_no}</p></div>
                         <div className='compound-details'><h4>PUBCHEM ID: </h4><p><a rel="noreferrer" href={'https://pubchem.ncbi.nlm.nih.gov/#query='+props.compound.pubchem_cid}>{props.compound.pubchem_cid}</a></p></div>
                         <div className='compound-details'><h4>Molecular Formula: </h4><p>{props.compound.molf}</p></div>
@@ -36,7 +36,7 @@ const ShowLess = (props) => {
                         <div className="compound-footer" id="submit" onClick={handleClick}>Summary</div>
                     </div>) : (props.filter===3) && (props.compound.filter_id==='AG' || props.compound.filter_id==='PL_AS_AG' || props.compound.filter_id==='PL_AG' || props.compound.filter_id==='AS_AG') ? (
                     <div className="showless-container">
-                        <div className='compound-name'><h3>{props.index+1}. Compound Name: {props.compound.compound_name}</h3></div>
+                        <div className='compound-name'><h3>Compound Name: {props.compound.compound_name}</h3></div>
                         <div className='compound-details'><h4>Accession No:</h4> <p className='access_id'>{props.compound.accession_no}</p></div>
                         <div className='compound-details'><h4>PUBCHEM ID: </h4><p><a rel="noreferrer" href={'https://pubchem.ncbi.nlm.nih.gov/#query='+props.compound.pubchem_cid}>{props.compound.pubchem_cid}</a></p></div>
                         <div className='compound-details'><h4>Molecular Formula: </h4><p>{props.compound.molf}</p></div>
@@ -47,7 +47,7 @@ const ShowLess = (props) => {
                         <div className="compound-footer" id="submit" onClick={handleClick}>Summary</div>
                     </div>) : (props.filter===0) ? (
                     <div className="showless-container">
-                        <div className='compound-name'><h3>{props.index+1}. Compound Name: {props.compound.compound_name}</h3></div>
+                        <div className='compound-name'><h3>Compound Name: {props.compound.compound_name}</h3></div>
                         <div className='compound-details'><h4>Accession No:</h4> <p className='access_id'>{props.compound.accession_no}</p></div>
                         <div className='compound-details'><h4>PUBCHEM ID: </h4><p><a rel="noreferrer" href={'https://pubchem.ncbi.nlm.nih.gov/#query='+props.compound.pubchem_cid}>{props.compound.pubchem_cid}</a></p></div>
                         <div className='compound-details'><h4>Molecular Formula: </h4><p>{props.compound.molf}</p></div>
