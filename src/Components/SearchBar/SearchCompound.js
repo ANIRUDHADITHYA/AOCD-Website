@@ -81,7 +81,7 @@ useEffect(()=>{
                             src="https://assets7.lottiefiles.com/packages/lf20_buhby0ug.json"
                             style={{width: '25%' }}>
                         </Player>
-                    ) :(data && data.length>0 && data.map((item, index)=><ShowLess compound={item} index={index} filter={filterNo}/>))
+                    ) :(data && data.length>0 && data.map((item, index)=><ShowLess compound={item} index={item.sno} filter={filterNo}/>))
 
 
 

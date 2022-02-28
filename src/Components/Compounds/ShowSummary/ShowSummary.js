@@ -12,7 +12,7 @@ function ShowSummary() {
 
     const getData=()=>{
 
-        setData(JSON.parse(localStorage.getItem('data'))[params.id]);
+        setData(JSON.parse(localStorage.getItem('data'))[params.id - 1]);
         
     }
     useEffect(()=>{

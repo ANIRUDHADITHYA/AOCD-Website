@@ -36,7 +36,7 @@ function Home() {
                 <div className='available-lable'>
                     <div className='lable-container'>
                         <div className="lable-item"><h6>349</h6><p>Compounds</p></div>
-                        <div className="lable-item"><h6>349</h6><p>Literature</p></div>
+                        <div className="lable-item"><h6>197</h6><p>Literature</p></div>
                         <div className="lable-item"><h6>281</h6><p>Plants</p></div>
                         <div className="lable-item"><h6>27</h6><p>Seaweed</p></div>
                         <div className="lable-item"><h6>13</h6><p>Microbes</p></div>                        

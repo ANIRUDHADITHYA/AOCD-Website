@@ -67,7 +67,7 @@ function Compounds() {
                 <div className="compound-container">
                   <div>
                   {
-                    data && data.length>0 && data.map((item, index)=><ShowLess compound={item} index={index} filter={filterNo}/>)
+                    data && data.length>0 && data.map((item, index)=><ShowLess compound={item} index={item.sno} filter={filterNo}/>)
                   }
                   </div>
                 </div>

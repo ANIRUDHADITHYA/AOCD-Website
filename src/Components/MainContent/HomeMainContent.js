@@ -21,8 +21,8 @@ function HomeMainContent () {
             </p>
             <br/>
             <p>
-                Presently, it comprises of 256 compounds wherein 100 compounds are acting against Appetite 
-                Suppressant, 96 Compounds are found to inhibit Pancreatic Lipase and 60 compounds 
+                Presently, it comprises of 349 compounds wherein 91 compounds are acting against Appetite 
+                Suppressant, 219 Compounds are found to inhibit Pancreatic Lipase and 101 compounds 
                 played significant role in inhibiting adipogenesis.
             </p>
         </div>
