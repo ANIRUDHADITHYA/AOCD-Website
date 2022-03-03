@@ -29,7 +29,7 @@ function ShowSummary() {
         <>
         <div className='summary-view'>
             <div className='compount-details-container'>
-                <div className='compound-name'><h3>Compound Name: {data.compound_name}</h3></div>
+                <div className='compound-name'><h3>{data.compound_name}</h3></div>
                 <div className='compound-details'><h4>Accession No:</h4> <p className='access_id'>{data.accession_no}</p></div>
 
                 <div className='compound-details'><h4>PUBCHEM ID: </h4><p><a rel="noreferrer" href={'https://pubchem.ncbi.nlm.nih.gov/#query='+data.pubchem_cid}>{data.pubchem_cid}</a></p></div>

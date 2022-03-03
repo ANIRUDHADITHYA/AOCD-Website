@@ -6,10 +6,11 @@ import AboutUs from '../AboutUs/AboutUs';
 import SearchBar from '../SearchBar/SearchBar';
 import './Home.css';
 import TypeWriterEffect from 'react-typewriter-effect';
+import {Link} from "react-router-dom";
 
 
 function Home() {
-    const placeholderName="Enter Accession NO/Compound Name/Pubchem ID/Smiles/Inchl/Plant Source";
+    const placeholderName="Enter Accession NO/Compound Name/Pubchem ID/Smiles/Inchl/Origin";
     
 	return (
 		<div className="home">
@@ -35,11 +36,11 @@ function Home() {
                 <SearchBar placeholder={placeholderName}/>
                 <div className='available-lable'>
                     <div className='lable-container'>
-                        <div className="lable-item"><h6>349</h6><p>Compounds</p></div>
+                        <Link to='/search?q=A' style={{ textDecoration: 'none' }}><div className="lable-item" ><h6>349</h6><p>Compounds</p></div></Link>
                         <div className="lable-item"><h6>197</h6><p>Literature</p></div>
-                        <div className="lable-item"><h6>281</h6><p>Plants</p></div>
-                        <div className="lable-item"><h6>27</h6><p>Seaweed</p></div>
-                        <div className="lable-item"><h6>13</h6><p>Microbes</p></div>                        
+                        <Link to='/search?q=plant' style={{ textDecoration: 'none' }}><div className="lable-item"><h6>281</h6><p>Plants</p></div></Link>
+                        <Link to='/search?q=marine' style={{ textDecoration: 'none' }}><div className="lable-item"><h6>27</h6><p>Marine</p></div></Link>
+                        <Link to='/search?q=microbe' style={{ textDecoration: 'none' }}><div className="lable-item"><h6>13</h6><p>Microbes</p></div></Link>                        
                     </div>
                 </div>
             </div>

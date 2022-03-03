@@ -17,9 +17,6 @@ function Downloads() {
                     <h1>2D Structure</h1>
                     <h3>Download 2D Structure for all Compounds</h3>
                     <div className="download-format">
-                        <a href={"https://aopmdb-backend.herokuapp.com/download_2d_image_png"} download style={{paddingRight:"10px"}}>
-                            <h5><i className="fa-solid fa-download"/>PNG</h5>
-                        </a>
                         <a href={"https://aopmdb-backend.herokuapp.com/download_2d_image_sdf"} download style={{paddingLeft:"10px"}}>
                             <h5><i className="fa-solid fa-download"/>SDF</h5>
                         </a> 
@@ -30,9 +27,6 @@ function Downloads() {
                     <h1>3D Structure</h1>
                     <h3>Download 3D Structure for all Compounds</h3>
                     <div className="download-format">
-                        <a href={"https://aopmdb-backend.herokuapp.com/download_3d_image_png"} download style={{paddingRight:"10px"}}>
-                            <h5><i className="fa-solid fa-download"/>PNG</h5>
-                        </a>
                         <a href={"https://aopmdb-backend.herokuapp.com/download_3d_image_sdf"} download style={{paddingLeft:"10px"}}>
                             <h5><i className="fa-solid fa-download"/>SDF</h5>
                         </a>

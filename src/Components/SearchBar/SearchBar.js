@@ -9,11 +9,15 @@ function SearchBar({placeholder ,data}){
     const history = useHistory();
 
     function handleClick() {
-        history.push("/search?q=" + search);
+        
         if (search === "") {
             setError("Enter Something.");
             return;
         }
+
+        history.push("/search?q=" + search);
+
+        window.location.reload(false)
     }
     
     const handleEnter = (e) =>{
@@ -26,7 +30,7 @@ function SearchBar({placeholder ,data}){
     
             history.push("/search?q=" + search);
             
-            
+            window.location.reload(false)
         }
     }
 

@@ -218,7 +218,13 @@
     width: 90%;
     margin: auto;
 }
-
+.compounds-content h1{
+    display: inline;
+    padding-bottom: 0px;
+}
+.compounds-content .length-tilte{
+    background-color: rgb(241, 241, 133);
+}
 .data-container{
     display: flex;
     flex-direction: column;
@@ -248,6 +254,10 @@
 .menubar-filter-selected h3{
     color: white;
     background-color: rgb(0, 165, 22);
+}
+.not-found{
+    text-align: center;
+    color: rgb(32, 121, 113);
 }
 
 

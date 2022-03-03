@@ -7,6 +7,11 @@ import home3 from '../Images/home3.png';
 function HomeMainContent () {
     return(
         <section className='home-main'>
+            <div className='HMC-Title'>
+                <h2>WHY AOMDB ?</h2>
+                <p>Browse me from today and let Obesity go away</p>
+            </div>
+        
         <div class="content-col">
             <p>
                 Natural plant-based compounds provide a vast pool of inhibition with the ability of 

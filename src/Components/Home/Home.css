@@ -115,6 +115,10 @@
     .lable-container{
         height: 100px;
     }
+    .lable-container a:-webkit-any-link {
+        text-decoration: none;
+        cursor: pointer;
+    }
     .lable-container h6{
         font-size: 25px;
         color: #28772f;

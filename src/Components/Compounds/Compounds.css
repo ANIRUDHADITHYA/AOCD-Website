@@ -222,7 +222,7 @@
     display: flex;
     flex-direction: column;
 }
-.menubar-container{
+/*.menubar-container{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -243,11 +243,68 @@
 }
 .menubar-filter-selected, .menubar-filter{
     padding-right: 15px;
+    display: none;
 }
 .menubar-filter-selected h3{
     color: white;
     background-color: rgb(0, 165, 22);
+}*/
+.menubar-filter-selected, .menubar-filter{
+    display: none;
 }
+.paginationBttns {
+    padding-top:50px;
+    width: 80%;
+    margin: auto;
+    height: 50px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.paginationBttns a {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 2px solid rgb(17, 177, 25);
+    color: black;
+    cursor: pointer;
+}
+
+.paginationBttns a:hover {
+    color: white;
+    background-color: rgb(17, 177, 25);
+}
+
+.paginationActive a {
+    color: white;
+    background-color: rgb(17, 177, 25);
+}
+
+.paginationDisabled a {
+    display: none;
+}
+.Compound-Searchbar .searchInputs{
+    padding-top: 0px;
+    width: 100%;
+    justify-content: flex-start;
+    margin: 10px;
+    height: 50px
+}
+.Compound-Searchbar .searchInputs .inputBar{
+    border: 2px  black solid;
+    width: 50%;
+}
+.Compound-Searchbar .searchInputs .inputBar{
+    border-right: none;
+}
+.Compound-Searchbar .searchInputs .searchIcon{
+    border: 2px  black solid;
+}
+.Compound-Searchbar .searchInputs .searchIcon{
+    border-left: none;
+}
+
 
 
 
