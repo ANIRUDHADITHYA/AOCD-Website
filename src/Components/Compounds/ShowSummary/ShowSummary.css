@@ -1,35 +1,19 @@
-.compound-heading{
-    border-bottom: 1px solid rgb(233, 233, 233);
-    padding-bottom: 5px;
-}
-.compound-heading span h4{
-    color: palevioletred;
-}
-.compound-split-container{
-    display: flex;
-    justify-content: space-between;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-.compound-split{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+a{
+    color: #555555
 }
-.image-container{
-    flex: 1;
-}
-table, th, td {
-    border: 2px solid #777;
-    border-collapse: collapse;
-}
-th{
-    padding: 7px;
+.dowload-section a {
+    text-decoration: none;
+    padding-left: 5px;
 }
 .dowload-section {
     text-align: center;
     padding: 5px;
     font-weight: 600;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
 }
 .dowload-section:hover{
     background-color: rgb(201, 200, 200);
@@ -37,14 +21,59 @@ th{
 .dowload-section i{
     color: yellowgreen;
 }
-.table-heading{
-    color: #1884ac;
-    font-size: larger;
-}
 .compount-details-container{
-    width: 90%;
+    width: 95%;
     margin: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
-.compount-details-container a{
-    color: rgb(56, 56, 56);
+table{
+    border-spacing: 0;
+}
+.com-table-container{
+    width: 100%;
+    padding-top: 10px;
+}
+.com-table-container th{
+    padding: 5px;
+    text-align: left;
+    padding-left: 10px;
+}
+.com-table-container td{
+    padding: 5px;
+}  
+
+.table-row-title{
+    background-color: #555555;
+    color: #F0F0F0;
+    font-weight: normal;
+    text-shadow: black 0px -1px 0px;
+}
+.compound-heading{
+    width: 15%;
+    color: #555555;
+    background-color: #F9F9F9;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.compound-details{
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.compound-details img {
+    float: left;
+    width:  100%;
+    height: 100%;
+    object-fit:cover;
+}
+.compound-name h1{
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.compound-name hr{
+    color: #ddd;
 }
