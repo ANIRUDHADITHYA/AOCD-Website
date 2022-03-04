@@ -69,6 +69,7 @@ function Compounds() {
   const pageCount = Math.ceil(data.length / usersPerPage);
   const changePage = ({selected}) => {
     setPageNumber(selected);
+    window.scroll({top:0, behavior: 'smooth'})
   };  
 	return (
 		<div className="compounds">
@@ -77,7 +78,7 @@ function Compounds() {
             </div>
             
             <div className='compounds-content'> {/*data.data && data.data.length>0 && data.data.map((item)=><p>{item.compound_name}</p>)*/}
-              <div className="title"><h1>Repository</h1><hr/></div>
+              <div className="title"><h1>Repository</h1></div><hr></hr>
               <>
               <div className="data-container">
                 <div className='menubar-container'>

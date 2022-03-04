@@ -204,8 +204,10 @@
 }*/
 .title h1{
     font-family: 'Roboto', sans-serif;
-    padding-bottom: 5px;
     color: rgb(102, 104, 102);
+}
+.title{
+    padding-bottom: 5px;
 }
 .compounds-content{
     text-align: justify;

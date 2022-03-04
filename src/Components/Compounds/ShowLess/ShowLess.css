@@ -16,9 +16,6 @@ display: inline;
     font-size: 17px;
     text-align:start;
 }
-.showless-container a{
-    color: #777;
-}
 .showless-container h3{
     color: #1884ac;
     padding-bottom: 10px;
@@ -26,6 +23,10 @@ display: inline;
 
 .compound-name{
     padding-bottom: 10px;
+}
+.compound-name h3:hover{
+    color: rgb(48, 48, 48);
+    text-decoration: underline;
 }
 .showless-container h4{
     color: rgb(100, 100, 100);
@@ -37,11 +38,19 @@ display: inline;
     color: #1884ac;
     text-transform: capitalize;
 }
+.compound-details a{
+    color: #1884ac;
+}
+.compound-details a:hover{
+    color: #777;
+}
 .compound-footer:hover{
     text-decoration: underline;
 }
-.compound-details{
+.ShowLess-Div .compound-details{
     padding-bottom: 1px;
     border-bottom: 1px solid rgb(233, 233, 233);
+    border-left: none;
+    border-right: none;
     word-break: break-all;
 }

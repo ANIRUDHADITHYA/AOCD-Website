@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import './ShowSummary.css';
 import { useParams } from "react-router-dom";
 import Navbar from "../../Navbar/Navbar";
+import { useHistory } from "react-router-dom";
+
 
 function ShowSummary() {
 
@@ -22,7 +24,7 @@ function ShowSummary() {
     
     },[])// eslint-disable-line react-hooks/exhaustive-deps
 
-
+    let history = useHistory();
 
 
 
@@ -70,7 +72,11 @@ function ShowSummary() {
                 <div className='compound-details'><h4>Reference Article DOI: </h4><p><a rel="noreferrer" href={'https://dx.doi.org/'+data.ref_doi}>{data.ref_doi}</a></p></div>
                 <div className='compound-details'><h4>Year of Publication: </h4><p>{data.yop}</p></div>
     <div className='compound-details'><h4>Name of Journal: </h4><p>{data.jonl_name}</p></div>*/}
-                <div className='compound-name'><h1>Showing Compound {data.compound_name}</h1></div><hr></hr>
+                <div className='compound-name'>
+                    <h1>Showing Compound {data.compound_name}</h1>
+                    <button onClick={() => history.goBack()}>Back to Compounds</button>
+                </div>
+                <hr></hr>
                 <table className="com-table-container" style={{tableLayout:'fixed'}}>
                     <tr>
                         <th className='table-row-title' colspan="2" scope="colgroup">Info</th>
