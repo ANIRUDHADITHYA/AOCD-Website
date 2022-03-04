@@ -210,7 +210,7 @@ function Statistics() {
             <div className="graph">
                 <h2 className="graph-title">xLog P3</h2>
                 <Chart
-                    chartType="Bar"
+                    chartType="PieChart"
                     data={data2}
                 />
             </div>
@@ -218,7 +218,7 @@ function Statistics() {
             <div className="graph">
                 <h2 className="graph-title">H-Bond Donor</h2>
                 <Chart
-                    chartType="Bar"
+                    chartType="Line"
                     data={data3}
                 />
             </div>
@@ -227,7 +227,7 @@ function Statistics() {
             <div className="graph">
                 <h2 className="graph-title">H-Bond Acceptor</h2>
                 <Chart
-                    chartType="Bar"
+                    chartType="Scatter"
                     data={data4}
                 />
             </div>
