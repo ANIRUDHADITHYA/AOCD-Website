@@ -9,9 +9,16 @@ const restEndpoint = "http://aopmdb-backend.herokuapp.com/graph/";
 
 function Statistics() {
 
-    const [data, setData] = useState([]);
+    const [data1, setData1] = useState([]);
+    const [data2, setData2] = useState([]);
+    const [data3, setData3] = useState([]);
+    const [data4, setData4] = useState([]);
+    const [data5, setData5] = useState([]);
+    const [data6, setData6] = useState([]);
+    const [data7, setData7] = useState([]);
+    const [data8, setData8] = useState([]);
 
-    const getData=()=>{
+    const getData1=()=>{
 
         fetch(restEndpoint)
         .then(function(response){
@@ -20,16 +27,164 @@ function Statistics() {
         })
         .then(function(myJson) {
             console.log(myJson);
-            setData(myJson.molecular_weight.data)
+            setData1(myJson.molecular_weight.data)
         
         });
     
         
     }
+
+    const getData2=()=>{
+
+        fetch(restEndpoint)
+        .then(function(response){
+            console.log(response)
+            return response.json();
+        })
+        .then(function(myJson) {
+            console.log(myJson);
+            setData2(myJson.x_log_p3.data)
+        
+        });
+    
+        
+    }
+
+    const getData3=()=>{
+
+        fetch(restEndpoint)
+        .then(function(response){
+            console.log(response)
+            return response.json();
+        })
+        .then(function(myJson) {
+            console.log(myJson);
+            setData3(myJson.h_bond_donor.data)
+        
+        });
+    
+        
+    }
+
+    const getData4=()=>{
+
+        fetch(restEndpoint)
+        .then(function(response){
+            console.log(response)
+            return response.json();
+        })
+        .then(function(myJson) {
+            console.log(myJson);
+            setData4(myJson.h_bond_acceptor.data)
+        
+        });
+    
+        
+    }
+
+    const getData5=()=>{
+
+        fetch(restEndpoint)
+        .then(function(response){
+            console.log(response)
+            return response.json();
+        })
+        .then(function(myJson) {
+            console.log(myJson);
+            setData5(myJson.ld50.data)
+        
+        });
+    
+        
+    }
+
+    const getData6=()=>{
+
+        fetch(restEndpoint)
+        .then(function(response){
+            console.log(response)
+            return response.json();
+        })
+        .then(function(myJson) {
+            console.log(myJson);
+            setData6(myJson.toxicity.data)
+        
+        });
+    
+        
+    }
+
+    const getData7=()=>{
+
+        fetch(restEndpoint)
+        .then(function(response){
+            console.log(response)
+            return response.json();
+        })
+        .then(function(myJson) {
+            console.log(myJson);
+            setData7(myJson.class_of_compounds.data)
+        
+        });
+    
+        
+    }
+
+    const getData8=()=>{
+
+        fetch(restEndpoint)
+        .then(function(response){
+            console.log(response)
+            return response.json();
+        })
+        .then(function(myJson) {
+            console.log(myJson);
+            setData8(myJson.year_of_publication.data)
+        
+        });
+    
+        
+    }
+  
     
     
     useEffect(()=>{
-        getData()
+        getData1()
+
+    },[])// eslint-disable-line react-hooks/exhaustive-deps
+
+    useEffect(()=>{
+        getData2()
+
+    },[])// eslint-disable-line react-hooks/exhaustive-deps
+
+    useEffect(()=>{
+        getData3()
+
+    },[])// eslint-disable-line react-hooks/exhaustive-deps
+    
+    useEffect(()=>{
+        getData4()
+
+    },[])// eslint-disable-line react-hooks/exhaustive-deps
+
+    useEffect(()=>{
+        getData5()
+
+    },[])// eslint-disable-line react-hooks/exhaustive-deps
+
+    useEffect(()=>{
+        getData6()
+
+    },[])// eslint-disable-line react-hooks/exhaustive-deps
+
+    useEffect(()=>{
+        getData7()
+
+    },[])// eslint-disable-line react-hooks/exhaustive-deps
+
+    useEffect(()=>{
+        getData8()
 
     },[])// eslint-disable-line react-hooks/exhaustive-deps
 
@@ -44,45 +199,71 @@ function Statistics() {
             </div>
             <div className='statistics-content'>
 
-            <Chart
-                chartType="Bar"
-                data={data}
-                options={{
-                    chart: {
-                        title: "Moleculae weight of compounds",
-                    },
-                }}
-            />
+            <div className="graph">
+                <h2 className="graph-title">Molecular weight Range</h2>
+                <Chart
+                    chartType="Bar"
+                    data={data1}
+                />
+            </div>
 
-<Chart
-                chartType="Bar"
-                data={data}
-                options={{
-                    chart: {
-                        title: "Moleculae weight of compounds",
-                    },
-                }}
-            />
+            <div className="graph">
+                <h2 className="graph-title">xLog P3</h2>
+                <Chart
+                    chartType="Bar"
+                    data={data2}
+                />
+            </div>
 
-<Chart
-                chartType="Bar"
-                data={data}
-                options={{
-                    chart: {
-                        title: "Moleculae weight of compounds",
-                    },
-                }}
-            />
+            <div className="graph">
+                <h2 className="graph-title">H-Bond Donor</h2>
+                <Chart
+                    chartType="Bar"
+                    data={data3}
+                />
+            </div>
 
-<Chart
-                chartType="Bar"
-                data={data}
-                options={{
-                    chart: {
-                        title: "Moleculae weight of compounds",
-                    },
-                }}
-            />
+
+            <div className="graph">
+                <h2 className="graph-title">H-Bond Acceptor</h2>
+                <Chart
+                    chartType="Bar"
+                    data={data4}
+                />
+            </div>
+
+            <div className="graph">
+                <h2 className="graph-title">LD50</h2>
+                <Chart
+                    chartType="Bar"
+                    data={data5}
+                />
+            </div>
+
+
+            <div className="graph">
+                <h2 className="graph-title">Toxicity Class</h2>
+                <Chart
+                    chartType="Bar"
+                    data={data6}
+                />
+            </div>
+
+            <div className="graph">
+                <h2 className="graph-title">Class of Compounds</h2>
+                <Chart
+                    chartType="Bar"
+                    data={data7}
+                />
+            </div>
+
+            <div className="graph">
+                <h2 className="graph-title">Year of Publication</h2>
+                <Chart
+                    chartType="Bar"
+                    data={data8}
+                />
+            </div>
             </div>
             <Footer />
         </div>

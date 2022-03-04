@@ -37,11 +37,10 @@
     margin: 100px auto;
     width: 85%;
     text-align: justify;
-    background-image: linear-gradient(rgba(198, 252, 153, 0.4),rgba(198,252,153,0.4));
     color: black;
     background-position: center;
     background-size: cover;
-    padding: 70px 50px;
+    padding: 30px 50px;
     border-radius: 10px;
 }
 @media(max-width: 960px){
@@ -49,4 +48,14 @@
         font-size: 40px;
     }
     
+}
+
+.graph {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.graph-title {
+    margin-bottom: 25px;
 }
