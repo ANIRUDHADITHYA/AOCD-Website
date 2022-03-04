@@ -9,14 +9,14 @@ const restEndpoint = "http://aopmdb-backend.herokuapp.com/graph/";
 
 function Statistics() {
 
-    const [data1, setData1] = useState([]);
-    const [data2, setData2] = useState([]);
-    const [data3, setData3] = useState([]);
-    const [data4, setData4] = useState([]);
-    const [data5, setData5] = useState([]);
-    const [data6, setData6] = useState([]);
-    const [data7, setData7] = useState([]);
-    const [data8, setData8] = useState([]);
+    const [data1, setData1] = useState([["Molecular weight Range", "No. of compounds"]]);
+    const [data2, setData2] = useState([["Molecular weight Range", "No. of compounds"]]);
+    const [data3, setData3] = useState([["Molecular weight Range", "No. of compounds"]]);
+    const [data4, setData4] = useState([["Molecular weight Range", "No. of compounds"]]);
+    const [data5, setData5] = useState([["Molecular weight Range", "No. of compounds"]]);
+    const [data6, setData6] = useState([["Molecular weight Range", "No. of compounds"]]);
+    const [data7, setData7] = useState([["Molecular weight Range", "No. of compounds"]]);
+    const [data8, setData8] = useState([["Molecular weight Range", "No. of compounds"]]);
 
     const getData1=()=>{
 
