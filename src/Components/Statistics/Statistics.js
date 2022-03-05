@@ -210,7 +210,7 @@ function Statistics() {
             <div className="graph">
                 <h2 className="graph-title">xLog P3</h2>
                 <Chart
-                    chartType="PieChart"
+                    chartType="Line"
                     data={data2}
                 />
             </div>
@@ -218,7 +218,7 @@ function Statistics() {
             <div className="graph">
                 <h2 className="graph-title">H-Bond Donor</h2>
                 <Chart
-                    chartType="Line"
+                    chartType="Scatter"
                     data={data3}
                 />
             </div>
@@ -227,7 +227,7 @@ function Statistics() {
             <div className="graph">
                 <h2 className="graph-title">H-Bond Acceptor</h2>
                 <Chart
-                    chartType="Scatter"
+                    chartType="Bar"
                     data={data4}
                 />
             </div>
@@ -235,7 +235,7 @@ function Statistics() {
             <div className="graph">
                 <h2 className="graph-title">LD50</h2>
                 <Chart
-                    chartType="Bar"
+                    chartType="Line"
                     data={data5}
                 />
             </div>
@@ -244,7 +244,7 @@ function Statistics() {
             <div className="graph">
                 <h2 className="graph-title">Toxicity Class</h2>
                 <Chart
-                    chartType="Bar"
+                    chartType="Scatter"
                     data={data6}
                 />
             </div>
@@ -260,7 +260,7 @@ function Statistics() {
             <div className="graph">
                 <h2 className="graph-title">Year of Publication</h2>
                 <Chart
-                    chartType="Bar"
+                    chartType="PieChart"
                     data={data8}
                 />
             </div>
