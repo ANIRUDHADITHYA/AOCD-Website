@@ -204,6 +204,9 @@ function Statistics() {
                 <Chart
                     chartType="Bar"
                     data={data1}
+                    legendToggle
+                    width="100%"
+                    height="400px"
                 />
             </div>
 
@@ -212,6 +215,9 @@ function Statistics() {
                 <Chart
                     chartType="Bar"
                     data={data2}
+                    legendToggle
+                    width="100%"
+                    height="400px"
                 />
             </div>
 
@@ -220,6 +226,9 @@ function Statistics() {
                 <Chart
                     chartType="Bar"
                     data={data3}
+                    legendToggle
+                    width="100%"
+                    height="400px"
                 />
             </div>
 
@@ -229,14 +238,20 @@ function Statistics() {
                 <Chart
                     chartType="Bar"
                     data={data4}
+                    legendToggle
+                    width="100%"
+                    height="400px"
                 />
             </div>
 
             <div className="graph">
-                <h2 className="graph-title">LD50</h2>
+                <h2 className="graph-title">LD50 Values</h2>
                 <Chart
                     chartType="Bar"
                     data={data5}
+                    legendToggle
+                    width="100%"
+                    height="400px"
                 />
             </div>
 
@@ -246,14 +261,20 @@ function Statistics() {
                 <Chart
                     chartType="Bar"
                     data={data6}
+                    legendToggle
+                    width="100%"
+                    height="400px"
                 />
             </div>
 
             <div className="graph">
                 <h2 className="graph-title">Class of Compounds</h2>
                 <Chart
-                    chartType="Bar"
+                    chartType="BarChart"
                     data={data7}
+                    legendToggle
+                    width="100%"
+                    height="900px"
                 />
             </div>
 
@@ -262,6 +283,9 @@ function Statistics() {
                 <Chart
                     chartType="PieChart"
                     data={data8}
+                    legendToggle
+                    width="100%"
+                    height="400px"
                 />
             </div>
             </div>
