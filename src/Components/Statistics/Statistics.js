@@ -210,7 +210,7 @@ function Statistics() {
             <div className="graph">
                 <h2 className="graph-title">xLog P3</h2>
                 <Chart
-                    chartType="Line"
+                    chartType="Bar"
                     data={data2}
                 />
             </div>
@@ -218,7 +218,7 @@ function Statistics() {
             <div className="graph">
                 <h2 className="graph-title">H-Bond Donor</h2>
                 <Chart
-                    chartType="Scatter"
+                    chartType="Bar"
                     data={data3}
                 />
             </div>
@@ -235,7 +235,7 @@ function Statistics() {
             <div className="graph">
                 <h2 className="graph-title">LD50</h2>
                 <Chart
-                    chartType="Line"
+                    chartType="Bar"
                     data={data5}
                 />
             </div>
@@ -244,7 +244,7 @@ function Statistics() {
             <div className="graph">
                 <h2 className="graph-title">Toxicity Class</h2>
                 <Chart
-                    chartType="Scatter"
+                    chartType="Bar"
                     data={data6}
                 />
             </div>
