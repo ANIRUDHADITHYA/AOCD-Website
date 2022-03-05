@@ -213,30 +213,6 @@ function ShowSummary() {
                     </tr>
                 </table>               
             </div>
-            {/*<div className="image-container">
-                <table>
-                    <tr >
-                        <th className="table-heading">2D-Structure</th>
-                        <th className="table-heading">3D-Structure</th>
-                    </tr>
-                    <tr>
-                        <td><img src={'https://aopmdb-backend.herokuapp.com/static/2D STR/'+data.accession_no+'.png'} alt="2d-structure"></img></td>
-                        <td><img src={'https://aopmdb-backend.herokuapp.com/static/3D STR/'+data.accession_no+'.png'} alt="3d-structure"></img></td>
-                    </tr>
-                    <tr className="table-button">
-                        <td className="dowload-section"><i className="fa-solid fa-download"/>
-                            <a href={"https://aopmdb-backend.herokuapp.com/static/2D STR/"+data.accession_no+'.sdf'} download>
-                                SDF -2D Structure
-                            </a> 
-                        </td>
-                        <td className="dowload-section"><i className="fa-solid fa-download"/>
-                            <a href={"https://aopmdb-backend.herokuapp.com/static/3D STR/"+data.accession_no+'.sdf'} download>
-                                SDF -3D Structure
-                            </a> 
-                        </td>
-                    </tr>
-                </table>                                        
-    </div>*/}
         </div>
         </>
     )

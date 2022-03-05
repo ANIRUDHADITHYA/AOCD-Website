@@ -3,205 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
 .compounds{
     background-image: url("../Images/interlaced.png");
-}/*
-.compounds-header
-{
-    min-height: 50vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("../Images/Backdrop1.jpg");
-    background-position:top;
-    background-size: cover;
-    position: relative;
 }
-
-.compounds-heading{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: poppins,sans-serif;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    position:absolute;
-    width: 80%;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.compounds-heading h1{
-    font-size: 62px;    
-    text-align: center;
-}
-.compounds-heading h1 span{
-    color: #1fa329;
-}
-.downloads-content{
-
-    margin: auto;
-    width: 97%;
-}
-.menubar{
-    flex-direction: column;
-    width: 90%;
-    margin: auto;
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-between;
-}
-.menubar-container li{
-    list-style: none;
-    font-size: large;
-    padding: 10px;
-    cursor: pointer;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
-    border-radius: 5px;
-    z-index: 1;
-    background: inherit;
-    overflow: hidden;
-    width: 30%;
-    
-    position: relative;
-    flex-basis: 32%;
-    overflow: hidden;
-    padding-top: 0px;
-}
-.menubar-container li:hover{
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
-    border-radius: 5px;
-    position: relative;
-    z-index: 1;
-    background: inherit;
-    overflow: hidden;
-}
-.menubar-container-active li{
-    list-style: none;
-    font-size: large;
-    padding: 10px;
-    cursor: pointer;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
-    border-radius: 5px;
-    position: relative;
-    z-index: 1;
-    background: inherit;
-    overflow: hidden;
-    width: 30%;
-}
-.menubar-container-active .pl{
-    list-style: none;
-    font-size: large;
-    padding: 10px;
-    cursor: pointer;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
-    border-radius: 5px;
-    position: relative;
-    z-index: 1;
-    background: inherit;
-    overflow: hidden;
-    width: 40%;
-}
-.row1{
-    flex-direction: column;
-    width: 90%;
-    margin: auto;
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    background-color: aliceblue;
-}
-.data-container{
-    padding-top: 50px;
-    display: flex;
-    justify-content: flex-start;
-
-}
-.list{
-    padding-bottom: 50px;
-    
-}
-.menubar-container h3{
-    background-color: #cfcfcf;
-    border-right: 25px solid transparent;
-    width: 300px;
-    padding: 10px;
-    border-radius: 2px;
-    transition: 0.5s ;
-    padding-left: 20px;
-    cursor: pointer;
-    position: relative;
-    flex-basis: 32%;
-}
-
-.menubar-container-true h3{
-    background-color: #cfcfcf;
-    padding-left: 25px;
-    color: #1fa329;
-    padding: 10px;
-    border-radius: 2px;
-    cursor: pointer;
-    width: 300px;
-    position: relative;
-    flex-basis: 32%;
-}
-.menubar-container h3:hover{
-    background-color: #969494;
-    box-shadow: #1fa329;
-}
-.menubar-container a{
-    text-decoration: none;
-    color: black;
-}
-.compound-container{
-    background-color:rgb(244, 255, 231);
-    width: 100%;
-    position: relative;
-    flex-basis: 68%;
-}
-.pl-none{
-    display: none;
-}
-
-.menubar-container{
-    background-image: linear-gradient(rgba(198, 252, 153, 0.4),rgba(198,252,153,0.4));
-    border-radius: 10px;
-    box-sizing:border-box;
-    text-align:justify;
-    font-size: large;
-    padding: 50px;
-    margin: auto;
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
-}
-
-
-.title{
-    padding-bottom: 50px;
-}
-
-.data-container{
-    display: flex;
-}
-
-
-.menubar-container{
-    flex: 2;
-    border-right: 2px solid rgb(109, 109, 109);
-    padding-top: 20px;
-}
-
-.compound-container{
-    flex: 10;
-    overflow-x: auto;
-}
-
-.menubar-filter h3{
-    padding: 15px 5px;
-    border-bottom: 2px solid yellowgreen;
-    width: 90%;
-    font-size: 18px;
-}
-
-.menubar-filter h3:hover{
-    background-color: rgb(224, 224, 224);
-    cursor: pointer;
-}*/
 .title h1{
     font-family: 'Roboto', sans-serif;
     padding-bottom: 5px;
@@ -215,7 +17,7 @@
     padding: 70px 50px;
     border-radius: 10px;
     padding-top: 7%;
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
 .compounds-content h1{
@@ -272,4 +74,10 @@
     .menubar-container{
         display: none;
     }
+    .compounds-content{
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
 }

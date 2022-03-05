@@ -33,6 +33,7 @@
     text-align: center;
     font-family: 'Rowdies', cursive;
     color: #ffffff;
+    padding-bottom: 10px;
 }
 .home-heading p{
     font-family: 'Pacifico', cursive;
@@ -42,7 +43,7 @@
     font-style: italic;
 }
 .homepage-content{
-    padding-top: 100px;
+    padding-top: 90px;
 }
 
 .about-us{
@@ -106,7 +107,6 @@
         font-size: 32px;
     }
     .lable-item{
-        flex: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -130,5 +130,8 @@
         color: rgb(54, 54, 54);
         font-weight: 700;
         text-align: center;
+    }
+    .homepage-content{
+        padding-top: 60px;
     }
 }

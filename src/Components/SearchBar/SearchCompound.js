@@ -72,7 +72,7 @@ const pagesVisited = pageNumber * usersPerPage;
 
 const pageCount = Math.ceil(data.length / usersPerPage);
 const changePage = ({selected}) => {
-  setPageNumber(selected);
+    setPageNumber(selected);
 };  
     
 	return (
@@ -111,15 +111,15 @@ const changePage = ({selected}) => {
                 </div>
 
                 <ReactPaginate
-                      previousLabel={"Previous"}
-                      nextLabel={"Next"}
-                      pageCount={pageCount}
-                      onPageChange={changePage}
-                      containerClassName={"paginationBttns"}
-                      previousLinkClassName={"previousBttn"}
-                      nextLinkClassName={"nextBttn"}
-                      disabledClassName={"paginationDisabled"}
-                      activeClassName={"paginationActive"}
+                        previousLabel={"Previous"}
+                        nextLabel={"Next"}
+                        pageCount={pageCount}
+                        onPageChange={changePage}
+                        containerClassName={"paginationBttns"}
+                        previousLinkClassName={"previousBttn"}
+                        nextLinkClassName={"nextBttn"}
+                        disabledClassName={"paginationDisabled"}
+                        activeClassName={"paginationActive"}
                     />
                 </div>
             </div>

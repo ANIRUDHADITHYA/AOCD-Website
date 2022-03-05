@@ -86,10 +86,13 @@
 
 
 @media(max-width: 800px){
+    .home-main{
+        width: 95%;
+    }
     .row{
         flex-direction:column;
     }
-    p{
-        font-size: large;
+    .content-col{
+        padding: 25px;
     }
 }
