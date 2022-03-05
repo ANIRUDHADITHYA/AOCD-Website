@@ -91,3 +91,6 @@ table{
     color: #F0F0F0;
     cursor: pointer;
 }
+.com-table-container .compound-heading h4{
+    font-family: 'Roboto Serif', serif;
+}

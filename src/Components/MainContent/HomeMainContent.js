@@ -9,7 +9,6 @@ function HomeMainContent () {
         <section className='home-main'>
             <div className='HMC-Title'>
                 <h2>WHY AOMDB ?</h2>
-                <p>Browse me from today and let Obesity go away</p>
             </div>
         
         <div class="content-col">

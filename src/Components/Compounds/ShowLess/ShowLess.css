@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100;300&display=swap');
 .compound-details h1,
 .compound-details h6,
 .compound-details h4,
@@ -43,6 +44,10 @@ display: inline;
 }
 .compound-details a:hover{
     color: #777;
+}
+.compound-details p ,.compound-details h4{
+    font-family: 'Roboto Serif', serif;
+    
 }
 .compound-footer:hover{
     text-decoration: underline;

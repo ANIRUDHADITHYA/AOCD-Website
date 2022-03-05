@@ -200,11 +200,36 @@ function Statistics() {
             <div className='statistics-content'>
 
             <div className="graph">
+                <h2 className="graph-title">Class of Compounds</h2>
+                <Chart
+                    chartType="BarChart"
+                    data={data7}
+                    width="100%"
+                    height="900px"
+                />
+                <h3 className="graph-title"><i>*Others</i></h3>
+                <p><i>Lactone, Fatty acid methyl esters, Fatty acid, Diaryl heptanoids, Coumarins and derivatives, Antioxidant, Phytosterol, 
+                    Carotenoid, chalconoid, Peptide, Indole, Vitamin, carbazole, Megastigmane, Anthocyanin, Carbonyl compound,
+                    Alkylamide, Sulfated polysaccharide derived, PhenylPropanoid, Pteridines and derivatives, 
+                    Carboxylic acid and derivatives, Cysteine and derivatives, Xanthone, Sulfoxides, Polysaccharides</i></p>
+            </div>
+
+            <div className="graph">
+                <h2 className="graph-title">Year of Publication</h2>
+                <Chart
+                    chartType="PieChart"
+                    data={data8}
+                    width="100%"
+                    height="400px"
+                />
+            </div>
+
+            <div className="graph">
                 <h2 className="graph-title">Molecular weight Range</h2>
                 <Chart
                     chartType="Bar"
                     data={data1}
-                    legendToggle
+            
                     width="100%"
                     height="400px"
                 />
@@ -215,7 +240,7 @@ function Statistics() {
                 <Chart
                     chartType="Bar"
                     data={data2}
-                    legendToggle
+                    
                     width="100%"
                     height="400px"
                 />
@@ -226,7 +251,7 @@ function Statistics() {
                 <Chart
                     chartType="Bar"
                     data={data3}
-                    legendToggle
+                    
                     width="100%"
                     height="400px"
                 />
@@ -238,7 +263,7 @@ function Statistics() {
                 <Chart
                     chartType="Bar"
                     data={data4}
-                    legendToggle
+                    
                     width="100%"
                     height="400px"
                 />
@@ -249,7 +274,7 @@ function Statistics() {
                 <Chart
                     chartType="Bar"
                     data={data5}
-                    legendToggle
+                    
                     width="100%"
                     height="400px"
                 />
@@ -261,33 +286,13 @@ function Statistics() {
                 <Chart
                     chartType="Bar"
                     data={data6}
-                    legendToggle
+                    
                     width="100%"
                     height="400px"
                 />
             </div>
 
-            <div className="graph">
-                <h2 className="graph-title">Class of Compounds</h2>
-                <Chart
-                    chartType="BarChart"
-                    data={data7}
-                    legendToggle
-                    width="100%"
-                    height="900px"
-                />
-            </div>
-
-            <div className="graph">
-                <h2 className="graph-title">Year of Publication</h2>
-                <Chart
-                    chartType="PieChart"
-                    data={data8}
-                    legendToggle
-                    width="100%"
-                    height="400px"
-                />
-            </div>
+           
             </div>
             <Footer />
         </div>
