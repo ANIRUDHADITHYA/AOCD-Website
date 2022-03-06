@@ -43,7 +43,7 @@ const Navbar = (props) => {
             <div className={props.colors || colorChange ? 'colorChange' : 'defaultcolor'}>
             
             <div className="navbar-container">
-                <Link to='/' className="navbar-logo" onClick={scrollTop}><p className="logo-p"><img src={Logo}></img></p></Link>
+                <Link to='/' className="navbar-logo" onClick={scrollTop}><img src={Logo} alt="logo" ></img></Link>
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                 </div>
