@@ -88,6 +88,13 @@
 .menu-icon {
     display: none;
 }
+.navbar-logo img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(45%, 15%);
+}
+
 
 @media screen and (max-width: 970px) {
     .navbar {
@@ -101,6 +108,9 @@
         top: 0;
         z-index: 999;
         position: fixed;
+    }
+    .navbar img{
+        padding-top: -10px;
     }
     .nav-menu {
         display: flex;
@@ -137,11 +147,11 @@
         border-radius: 0;
     }
 
-    .navbar-logo {
+    .navbar-logo img{
         position: absolute;
         top: 0;
         left: 0;
-        transform: translate(25%, 50%);
+        transform: translate(25%, 30%);
     }
 
     .menu-icon {
@@ -158,6 +168,5 @@
         color: #fff;
         font-size: 2rem;
     }
-
     
 }

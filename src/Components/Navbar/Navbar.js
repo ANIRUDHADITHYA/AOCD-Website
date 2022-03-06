@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
 import './Navbar.css';
+import Logo from "./../Images/logo.png";
 
 
 const Navbar = (props) => {
@@ -40,8 +41,9 @@ const Navbar = (props) => {
         <>
         <nav className="navbar">
             <div className={props.colors || colorChange ? 'colorChange' : 'defaultcolor'}>
+            
             <div className="navbar-container">
-                <Link to='/' className="navbar-logo" onClick={scrollTop}>AOMDB<i class="fab fa-pagelines"></i></Link>
+                <Link to='/' className="navbar-logo" onClick={scrollTop}><p className="logo-p"><img src={Logo}></img></p></Link>
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                 </div>
