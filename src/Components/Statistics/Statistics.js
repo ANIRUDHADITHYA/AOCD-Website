@@ -208,10 +208,10 @@ function Statistics() {
                     height="900px"
                 />
                 <h3 className="graph-title"><i>*Others</i></h3>
-                <p><i>Lactone, Fatty acid methyl esters, Fatty acid, Diaryl heptanoids, Coumarins and derivatives, Antioxidant, Phytosterol, 
-                    Carotenoid, chalconoid, Peptide, Indole, Vitamin, carbazole, Megastigmane, Anthocyanin, Carbonyl compound,
-                    Alkylamide, Sulfated polysaccharide derived, PhenylPropanoid, Pteridines and derivatives, 
-                    Carboxylic acid and derivatives, Cysteine and derivatives, Xanthone, Sulfoxides, Polysaccharides</i></p>
+                <p><i>Lactone - 4, Fatty acid methyl esters - 4, Fatty acid - 4, Diaryl heptanoids - 4, Coumarins and derivatives - 3, Antioxidant - 3, Phytosterol - 3, 
+                    Carotenoid - 3, chalconoid - 3, Peptide - 2, Indole - 2, Vitamin - 2, carbazole - 2, Megastigmane -2, Anthocyanin - 2, Carbonyl compound - 1,
+                    Alkylamide, Sulfated polysaccharide derived, PhenylPropanoid, Pteridines and derivatives - 1, 
+                    Carboxylic acid and derivatives - 1, Cysteine and derivatives - 1, Xanthone - 1, Sulfoxides - 1, Polysaccharides - 1</i></p>
             </div>
 
             <div className="graph">
