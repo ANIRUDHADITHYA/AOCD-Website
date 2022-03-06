@@ -16,6 +16,10 @@
     padding: 50px;
     width: 100%;
     margin: auto;
+    
+}
+.content-col p{
+    font-family: 'League Gothic', sans-serif;
 }
 .content-col:hover{
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
