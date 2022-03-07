@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,500&display=swap');
-.home{
+/*.home{
     background-image: url("../Images/double-bubble-outline.png");
-}
+}*/
 .home-header
 {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url("../Images/Backdrop1.jpg");
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("../Images/Backdrop1.jpg");
     background-position:top;
     background-size: cover;
     position: relative;
@@ -56,7 +56,7 @@
 }
 
 .available-lable{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5));
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7));
     font-family: poppins,sans-serif;
     color: rgb(255, 255, 255);
     position:absolute;

@@ -73,7 +73,7 @@ function ShowSummary() {
                 <div className='compound-details'><h4>Year of Publication: </h4><p>{data.yop}</p></div>
     <div className='compound-details'><h4>Name of Journal: </h4><p>{data.jonl_name}</p></div>*/}
                 <div className='compound-name'>
-                    <h1>Showing Compound {data.compound_name}</h1>
+                    <h1><span>Showing</span> {data.compound_name}</h1>
                     <button onClick={() => history.goBack()}>Back to Compounds</button>
                 </div>
                 <hr></hr>

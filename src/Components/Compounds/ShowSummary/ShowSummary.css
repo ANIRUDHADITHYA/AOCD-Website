@@ -70,7 +70,7 @@ table{
 }
 .compound-name h1{
     font-size: 30px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Serif', serif;
     font-weight: 600;
     padding-bottom: 5px;
 }
@@ -93,4 +93,9 @@ table{
 }
 .com-table-container .compound-heading h4{
     font-family: 'Roboto Serif', serif;
+}
+.compound-name h1 span{
+    font-weight: 400;
+    color: #555555;
+    padding-right: 12px;
 }

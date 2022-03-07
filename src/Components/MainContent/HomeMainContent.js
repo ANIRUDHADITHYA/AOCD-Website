@@ -8,7 +8,7 @@ function HomeMainContent () {
     return(
         <section className='home-main'>
             <div className='HMC-Title'>
-                <h2>WHY AOMDB ?</h2>
+                <h2>WHY AOMDB ?<hr></hr></h2>
             </div>
         
         <div class="content-col">

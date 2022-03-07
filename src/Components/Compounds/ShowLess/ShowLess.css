@@ -25,6 +25,10 @@ display: inline;
 .compound-name{
     padding-bottom: 10px;
 }
+.compound-name h3{
+    font-size: 25px;
+    color: #1884ac;
+}
 .compound-name h3:hover{
     color: rgb(48, 48, 48);
     text-decoration: underline;
