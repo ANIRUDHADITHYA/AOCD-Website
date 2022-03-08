@@ -18,7 +18,7 @@ const ShowLess = (props) => {
                     <div className="showless-container">
                         <div className='compound-name'><h3 onClick={handleClick}>{props.compound.compound_name}</h3></div>
                         <div className='compound-details'><h4>Accession No:</h4> <p className='access_id'>{props.compound.accession_no}</p></div>
-                        <div className='compound-details'><h4>PUBCHEM ID: </h4><p><a rel="noreferrer" href={'https://pubchem.ncbi.nlm.nih.gov/#query='+props.compound.pubchem_cid}>{props.compound.pubchem_cid}</a></p></div>
+                        <div className='compound-details'><h4>PUBCHEM ID: </h4><p><a rel="noreferrer" target="_blank" href={'https://pubchem.ncbi.nlm.nih.gov/#query='+props.compound.pubchem_cid}>{props.compound.pubchem_cid}</a></p></div>
                         <div className='compound-details'><h4>Molecular Formula: </h4><p>{props.compound.molf}</p></div>
                         <div className='compound-details'><h4>Mode of Action: </h4><p>{props.compound.moa}</p></div>
                         <div className='compound-details'><h4>Origin: </h4><p>{props.compound.origin}</p></div>
@@ -29,7 +29,7 @@ const ShowLess = (props) => {
                     <div className="showless-container" >
                         <div className='compound-name'><h3 onClick={handleClick}>{props.compound.compound_name}</h3></div>
                         <div className='compound-details'><h4>Accession No:</h4> <p className='access_id'>{props.compound.accession_no}</p></div>
-                        <div className='compound-details'><h4>PUBCHEM ID: </h4><p><a rel="noreferrer" href={'https://pubchem.ncbi.nlm.nih.gov/#query='+props.compound.pubchem_cid}>{props.compound.pubchem_cid}</a></p></div>
+                        <div className='compound-details'><h4>PUBCHEM ID: </h4><p><a rel="noreferrer" target="_blank" href={'https://pubchem.ncbi.nlm.nih.gov/#query='+props.compound.pubchem_cid}>{props.compound.pubchem_cid}</a></p></div>
                         <div className='compound-details'><h4>Molecular Formula: </h4><p>{props.compound.molf}</p></div>
                         <div className='compound-details'><h4>Mode of Action: </h4><p>{props.compound.moa}</p></div>
                         <div className='compound-details'><h4>Origin: </h4><p>{props.compound.origin}</p></div>
@@ -40,7 +40,7 @@ const ShowLess = (props) => {
                     <div className="showless-container">
                         <div className='compound-name'><h3 onClick={handleClick}>{props.compound.compound_name}</h3></div>
                         <div className='compound-details'><h4>Accession No:</h4> <p className='access_id'>{props.compound.accession_no}</p></div>
-                        <div className='compound-details'><h4>PUBCHEM ID: </h4><p><a rel="noreferrer" href={'https://pubchem.ncbi.nlm.nih.gov/#query='+props.compound.pubchem_cid}>{props.compound.pubchem_cid}</a></p></div>
+                        <div className='compound-details'><h4>PUBCHEM ID: </h4><p><a rel="noreferrer" target="_blank" href={'https://pubchem.ncbi.nlm.nih.gov/#query='+props.compound.pubchem_cid}>{props.compound.pubchem_cid}</a></p></div>
                         <div className='compound-details'><h4>Molecular Formula: </h4><p>{props.compound.molf}</p></div>
                         <div className='compound-details'><h4>Mode of Action: </h4><p>{props.compound.moa}</p></div>
                         <div className='compound-details'><h4>Origin: </h4><p>{props.compound.origin}</p></div>
@@ -51,7 +51,7 @@ const ShowLess = (props) => {
                     <div className="showless-container" >
                         <div className='compound-name'><h3 onClick={handleClick}>{props.compound.compound_name}</h3></div>
                         <div className='compound-details'><h4>Accession No:</h4> <p className='access_id'>{props.compound.accession_no}</p></div>
-                        <div className='compound-details'><h4>PUBCHEM ID: </h4><p><a rel="noreferrer" href={'https://pubchem.ncbi.nlm.nih.gov/#query='+props.compound.pubchem_cid}>{props.compound.pubchem_cid}</a></p></div>
+                        <div className='compound-details'><h4>PUBCHEM ID: </h4><p><a rel="noreferrer" target="_blank" href={'https://pubchem.ncbi.nlm.nih.gov/#query='+props.compound.pubchem_cid}>{props.compound.pubchem_cid}</a></p></div>
                         <div className='compound-details'><h4>Molecular Formula: </h4><p>{props.compound.molf}</p></div>
                         <div className='compound-details'><h4>Mode of Action: </h4><p>{props.compound.moa}</p></div>
                         <div className='compound-details'><h4>Origin: </h4><p>{props.compound.origin}</p></div>
