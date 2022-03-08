@@ -33,45 +33,6 @@ function ShowSummary() {
         <div className='summary-view'>
             <Navbar colors={true}/>
             <div className='compount-details-container'>
-                {/*<div className='compound-name'><h3>Showing Compound {data.compound_name}</h3></div>
-
-                <div className='compound-heading'><span><h4>Info</h4></span></div>
-                <div className='compound-details'><h4>Accession No:</h4> <p className='access_id'>{data.accession_no}</p></div>
-
-                <div className='compound-details'><h4>PUBCHEM ID: </h4><p><a rel="noreferrer" href={'https://pubchem.ncbi.nlm.nih.gov/#query='+data.pubchem_cid}>{data.pubchem_cid}</a></p></div>
-                <div className='compound-details'><h4>Molecular Formula: </h4><p>{data.molf}</p></div>
-                <div className='compound-details'><h4>Molecular Weight: </h4><p>{data.mw}</p></div>
-                <div className='compound-details'><h4>Mode of Action: </h4><p>{data.moa}</p></div>
-                <div className='compound-details'><h4>Origin: </h4><p>{data.origin}</p></div>
-                <div className='compound-details'><h4>Scientific Name: </h4><p style={{fontStyle:"italic"}}>{data.sci_name}</p></div>
-                <div className='compound-details'><h4>Class of compounds: </h4><p>{data.class_comp}</p></div>
-                <div className='compound-details'><h4>Biological Activity</h4> <p>(IC50 values/ KI )</p><h4>: </h4><p>{data.bio_act}</p></div>
-
-                <div className='compound-heading'><span><h4>Structural Information</h4></span></div>
-                <div className='compound-details'><h4>IUPAC Name: </h4><p>{data.iupac_name}</p></div>
-                <div className='compound-details'><h4>Canonical Smiles: </h4><p>{data.canl_smiles}</p></div>
-                <div className='compound-details'><h4>InchI: </h4><p>{data.inchl}</p></div>
-
-                <div className='compound-heading'><span><h4>Predicted Properties</h4></span></div>
-                <div className='compound-details'><h4>xlogP<sub>3</sub>: </h4><p>{data.xlogp3}</p></div>
-                <div className='compound-details'><h4>H-Bond Donor: </h4><p>{data.h_bond_d}</p></div>
-                <div className='compound-details'><h4>H-Bond Acceptor: </h4><p>{data.h_bond_a}</p></div>
-                <div className='compound-details'><h4>Molar Refraction: </h4><p>{data.mol_refa}</p></div>
-                <div className='compound-details'><h4>TPSA: </h4><p>{data.tpsa}</p></div>
-                <div className='compound-details'><h4>No. of rotatable Bonds: </h4><p>{data.rot_bonds}</p></div>
-                <div className='compound-details'><h4>No. of heavy Atoms: </h4><p>{data.heavy_atoms}</p></div>
-                <div className='compound-details'><h4>Lipinski - Drug likeness: </h4><p>{data.lipinski}</p></div>
-                <div className='compound-details'><h4>BBB Permeant: </h4><p>{data.bbb_per}</p></div>
-                <div className='compound-details'><h4>Bioavailability Score: </h4><p>{data.bioavail}</p></div>
-
-                <div className='compound-heading'><span><h4>Toxicity Predited</h4></span></div>
-                <div className='compound-details'><h4>LD50 values: </h4><p>{data.ld50_val}</p></div>
-                <div className='compound-details'><h4>Toxicity Class: </h4><p>{data.toxicity}</p></div>
-                
-                <div className='compound-heading'><span><h4>Reference</h4></span></div>
-                <div className='compound-details'><h4>Reference Article DOI: </h4><p><a rel="noreferrer" href={'https://dx.doi.org/'+data.ref_doi}>{data.ref_doi}</a></p></div>
-                <div className='compound-details'><h4>Year of Publication: </h4><p>{data.yop}</p></div>
-    <div className='compound-details'><h4>Name of Journal: </h4><p>{data.jonl_name}</p></div>*/}
                 <div className='compound-name'>
                     <h1><span>Showing</span> {data.compound_name}</h1>
                     <button onClick={() => history.goBack()}>Back to Compounds</button>
@@ -201,7 +162,7 @@ function ShowSummary() {
                     </tr>
                     <tr>
                         <td className='compound-heading' ><h4>Reference Article DOI</h4></td>
-                        <td className='compound-details' ><p><a rel="noreferrer" href={'https://dx.doi.org/'+data.ref_doi}>{data.ref_doi}</a></p></td>
+                        <td className='compound-details' ><p><a rel="noreferrer" target="_blank" href={data.ref_doi}>{data.ref_doi}</a></p></td>
                     </tr>
                     <tr>
                         <td className='compound-heading' ><h4>Year of Publication</h4></td>
