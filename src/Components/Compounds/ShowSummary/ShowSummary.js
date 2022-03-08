@@ -52,7 +52,7 @@ function ShowSummary() {
                     </tr>
                     <tr>
                         <td className='compound-heading' ><h4>PUBCHEM ID</h4></td>
-                        <td className='compound-details' ><p><a rel="noreferrer" href={'https://pubchem.ncbi.nlm.nih.gov/#query='+data.pubchem_cid}>{data.pubchem_cid}</a></p></td>
+                        <td className='compound-details' ><p><a rel="noreferrer" target="_blank" href={'https://pubchem.ncbi.nlm.nih.gov/#query='+data.pubchem_cid}>{data.pubchem_cid}</a></p></td>
                     </tr>
                     <tr>
                         <td className='compound-heading' ><h4>Molecular Formula</h4></td>
