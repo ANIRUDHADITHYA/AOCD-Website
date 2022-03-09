@@ -16,17 +16,17 @@ function AboutUsKnowMore(){
             <div className='aboutus-content'>
                 <div className='au-container'>
                     <p>
-                    AOMDB delivers a comprehensive resource on botanicals isolated from plant source(s) 
+                    AOCD delivers a comprehensive resource on botanicals isolated from plant source(s) 
                     and its classification. It also includes compounds derived from Marine seaweeds; 
                     Microbial source that are found to have potent source of inhibition targeting obesity. 
                     This database provides extensive information on physicochemical descriptors, pharmacokinetic 
                     properties, Drug like nature, Computational toxicity prediction, Lipophilic properties of compounds 
-                    to support drug discovery. Every compound in AOMDB has its own specific mode of action against obesity 
+                    to support drug discovery. Every compound in AOCD has its own specific mode of action against obesity 
                     consisting of more than 100 data fields covering parameters like Molecular Weight, Molecular Formula, Inchl, 
                     Canonical Smiles, IUPAC name, xLogP3, Number of hydrogen bond donors and acceptors, Molar refractivity, TPSA, 
                     Number of rotatable bonds and Number of heavy atoms, Lipinski’s rule, Bioavailability score, BBB permeant, LD50 
                     values, and Toxicity Class. The biological activity of all the compounds depending on the Inhibitory Concentration 
-                    has also been represented in this AOMDB. The 2D and 3D structure of the compound can be accessed through Sdf 
+                    has also been represented in this AOCD. The 2D and 3D structure of the compound can be accessed through Sdf 
                     format/ Png format depending on the relevance. 
 
                     </p>

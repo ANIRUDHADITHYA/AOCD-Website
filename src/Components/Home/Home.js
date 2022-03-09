@@ -23,8 +23,8 @@ function Home() {
                         startDelay={300}
                         cursorColor="#3F3D56"
                         multiText={[
-                        'Hi, Welcome to AOMDB',
-                        'Antiobesity Metabolite Database',
+                        'Hi, Welcome to AOCD',
+                        'Antiobesity Compound Database',
                         ]}
                         multiTextDelay={1500}
                         typeSpeed={130}

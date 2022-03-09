@@ -13,7 +13,7 @@ const handleClick = () =>{
         <section className="footer-container">
             <div className="footer-row">
                 <div class="footer-col">
-                    <h1>AOMDB</h1>
+                    <h1>AOCD</h1>
                     <p>An extensive Repository unveiling Natural Compounds isolated from Plants, Microbes 
                         and Marine targeting obesity by providing intricate information about various 
                         insiico parameters and also its biological activity all at once</p>
@@ -26,7 +26,7 @@ const handleClick = () =>{
                         <br/>lavanyap@sriramachandra.edu.in</p>
                 </div>
             </div>
-            <div className='footer-row'><Link onClick={handleClick} className='cpy-ryt' to='/'>© 2022 Copyright: www.AOPMDB.in</Link></div>
+            <div className='footer-row'><Link onClick={handleClick} className='cpy-ryt' to='/'>© 2022 Copyright: www.AOCD.co.in</Link></div>
         </section>
     )
 }

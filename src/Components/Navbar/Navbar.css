@@ -88,11 +88,9 @@
 .menu-icon {
     display: none;
 }
-.navbar-logo img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(45%, 15%);
+
+.navbar-logo{
+    font-weight: 800;
 }
 
 
@@ -108,9 +106,6 @@
         top: 0;
         z-index: 999;
         position: fixed;
-    }
-    .navbar img{
-        padding-top: -10px;
     }
     .nav-menu {
         display: flex;
@@ -146,14 +141,6 @@
         color: #242424;
         border-radius: 0;
     }
-
-    .navbar-logo img{
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate(25%, 30%);
-    }
-
     .menu-icon {
         display: block;
         position: absolute;
