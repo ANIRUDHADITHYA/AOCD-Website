@@ -47,8 +47,8 @@ function ShowSummary() {
                     <tr>
                         <td className='compound-heading' ><h4>Accession No</h4></td>
                         <td className='compound-details' ><p className='access_id'>{data.accession_no}</p></td>
-                        <td className='compound-details' rowSpan="8"><img src={'https://aopmdb-backend.herokuapp.com/static/2D STR/'+data.accession_no+'.png'} alt="2d-structure"></img></td>
-                        <td className='compound-details' rowSpan="8"><img src={'https://aopmdb-backend.herokuapp.com/static/3D STR/'+data.accession_no+'.png'} alt="3d-structure"></img></td>
+                        <td className='compound-details' rowSpan="8"><img src={'https://aomdb-backend.herokuapp.com/static/2D STR/'+data.accession_no+'.png'} alt="2d-structure"></img></td>
+                        <td className='compound-details' rowSpan="8"><img src={'https://aomdb-backend.herokuapp.com/static/3D STR/'+data.accession_no+'.png'} alt="3d-structure"></img></td>
                     </tr>
                     <tr>
                         <td className='compound-heading' ><h4>PUBCHEM ID</h4></td>
@@ -82,12 +82,12 @@ function ShowSummary() {
                         <td className='compound-heading' ><h4>Biological Activity <p>(IC50 values/ KI )</p></h4></td>
                         <td className='compound-details' ><p>{data.bio_act}</p></td>
                         <td className="dowload-section"><i className="fa-solid fa-download"/>
-                            <a href={"https://aopmdb-backend.herokuapp.com/static/2D STR/"+data.accession_no+'.sdf'} download>
+                            <a href={"https://aomdb-backend.herokuapp.com/static/2D STR/"+data.accession_no+'.sdf'} download>
                                 SDF -2D Structure
                             </a> 
                         </td>
                         <td className="dowload-section"><i className="fa-solid fa-download"/>
-                            <a href={"https://aopmdb-backend.herokuapp.com/static/3D STR/"+data.accession_no+'.sdf'} download>
+                            <a href={"https://aomdb-backend.herokuapp.com/static/3D STR/"+data.accession_no+'.sdf'} download>
                                 SDF -3D Structure
                             </a> 
                         </td>

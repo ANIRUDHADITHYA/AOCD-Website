@@ -10,7 +10,7 @@ import ShowSummary from './Components/Compounds/ShowSummary/ShowSummary';
 import SearchCompounds from './Components/SearchBar/SearchCompound';
 import { useState, useEffect } from 'react';
 
-const restEndpoint = "http://aopmdb-backend.herokuapp.com/db/";
+const restEndpoint = "http://aomdb-backend.herokuapp.com/db/";
 
 function App() {
 
