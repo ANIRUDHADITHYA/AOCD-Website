@@ -10,7 +10,7 @@ function AboutUsKnowMore(){
             <div className="aboutus-header">
                 <Navbar/>
                 <div className='aboutus-heading'>
-                    <h1>Abou <span>Us</span></h1>
+                    <h1>About <span>Us</span></h1>
                 </div>
             </div>
             <div className='aboutus-content'>
