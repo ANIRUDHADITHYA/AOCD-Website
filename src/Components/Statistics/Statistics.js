@@ -5,7 +5,7 @@ import './Statistics.css';
 import { Chart } from "react-google-charts";
 import { useState, useEffect } from 'react';
 
-const restEndpoint = "http://aocd-backend.herokuapp.com/graph/";
+const restEndpoint = "https://aocd-backend.herokuapp.com/graph/";
 
 function Statistics() {
 
