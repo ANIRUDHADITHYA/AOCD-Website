@@ -20,9 +20,6 @@ const Navbar = (props) => {
         });
     }
     
-    const scrollTop =() => {
-        window.scroll({top:0, behavior: 'smooth'})
-    }
     const changeNavbarColor = () =>{
         if(window.scrollY >= 80){
             setColorchange(true);
