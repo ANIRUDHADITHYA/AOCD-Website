@@ -1,12 +1,12 @@
 import { useState } from "react";
 import './SearchBar.css';
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function SearchBar({placeholder ,data}){
 
     const [search, setSearch] = useState("");
     const [error, setError] = useState(null);
-    const history = useHistory();
+    const navigate = useNavigate();
 
     function handleClick() {
         
@@ -15,7 +15,7 @@ function SearchBar({placeholder ,data}){
             return;
         }
 
-        history.push("/search?q=" + search);
+        navigate("/search?q=" + search);
 
         window.location.reload(false)
     }
@@ -28,7 +28,7 @@ function SearchBar({placeholder ,data}){
                 return;
             }
     
-            history.push("/search?q=" + search);
+            navigate("/search?q=" + search);
             
             window.location.reload(false)
         }

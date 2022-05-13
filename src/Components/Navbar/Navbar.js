@@ -38,33 +38,33 @@ const Navbar = (props) => {
             <div className={props.colors || colorChange ? 'colorChange' : 'defaultcolor'}>
             
             <div className="navbar-container">
-                <Link to='/' className="navbar-logo">AOCD</Link>
+                <Link to="/" className="navbar-logo">AOCD</Link>
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className="nav-item">
-                        <Link to='/' className="nav-links" onClick={closeMobileMenu}>
+                        <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                             Home
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/statistics' className="nav-links" onClick={closeMobileMenu}>
+                        <Link to="/statistics" className="nav-links" onClick={closeMobileMenu}>
                             Statistics
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/downloads' className="nav-links" onClick={closeMobileMenu}>
+                        <Link to="/downloads" className="nav-links" onClick={closeMobileMenu}>
                             Downloads
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to='/about-us' className="nav-links" onClick={closeMobileMenu}>
+                        <Link to="/about-us" className="nav-links" onClick={closeMobileMenu}>
                             About US
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-links" onClick={contactUsScroll}>
+                        <Link to="/" className="nav-links" onClick={contactUsScroll}>
                             Contact Us
                         </Link>
                     </li>

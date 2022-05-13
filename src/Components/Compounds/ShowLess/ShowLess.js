@@ -1,13 +1,13 @@
 import React from "react";
 import './ShowLess.css';
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const ShowLess = (props) => {
 
-    const history = useHistory();
+    const navigate = useNavigate();
 
     function handleClick() {
-    history.push("/summary/"+ props.index);
+    navigate("/summary/"+ props.index);
     window.scroll({top:0, behavior: 'smooth'})
 }
 

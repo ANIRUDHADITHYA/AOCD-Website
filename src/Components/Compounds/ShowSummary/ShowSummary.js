@@ -2,29 +2,27 @@ import { useState, useEffect } from 'react';
 import './ShowSummary.css';
 import { useParams } from "react-router-dom";
 import Navbar from "../../Navbar/Navbar";
-import { useHistory } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
+import Axios from "axios";
 
 function ShowSummary() {
 
     const params = useParams();
+    let navigate = useNavigate();
 
     const [data, setData] = useState([]);
 
+    const [url, setURL] = useState(process.env.PUBLIC_URL);
+
     
 
-    const getData=()=>{
-
-        setData(JSON.parse(localStorage.getItem('data'))[params.id - 1]);
-        
-    }
-    useEffect(()=>{
-        getData()
+    useEffect( ()=>{
+        Axios.get("http://localhost:5000/getdata").then((response)=>{
+            console.log(response.data);
+            setData(response.data[params.id - 1]);
+      })
+      },[])// eslint-disable-line react-hooks/exhaustive-deps
     
-    
-    },[])// eslint-disable-line react-hooks/exhaustive-deps
-
-    let history = useHistory();
 
 
 
@@ -35,7 +33,7 @@ function ShowSummary() {
             <div className='compount-details-container'>
                 <div className='compound-name'>
                     <h1><span>Showing</span> {data.compound_name}</h1>
-                    <button onClick={() => history.goBack()}>Back to Compounds</button>
+                    <button onClick={() => navigate(-1)}>Back to Compounds</button>
                 </div>
                 <hr></hr>
                 <table className="com-table-container" style={{tableLayout:'fixed'}}>
@@ -45,10 +43,10 @@ function ShowSummary() {
                         <th className='table-row-title' style={{textAlign:"center"}}>3D-Structure</th>
                     </tr>
                     <tr>
-                        <td className='compound-heading' ><h4>Accession No</h4></td>
+                        <td className='compound-heading' ><h4>Accession No {url}</h4></td>
                         <td className='compound-details' ><p className='access_id'>{data.accession_no}</p></td>
-                        <td className='compound-details' rowSpan="8"><img src={'https://aocd-backend.herokuapp.com/static/2D STR/'+data.accession_no+'.png'} alt="2d-structure"></img></td>
-                        <td className='compound-details' rowSpan="8"><img src={'https://aocd-backend.herokuapp.com/static/3D STR/'+data.accession_no+'.png'} alt="3d-structure"></img></td>
+                        <td className='compound-details' rowSpan="8"><img src={process.env.PUBLIC_URL + "/Images/2D_STR/"+data.accession_no+".png"} alt="2d-structure"></img></td>
+                        <td className='compound-details' rowSpan="8"><img src={process.env.PUBLIC_URL + "/Images/3D_STR/"+data.accession_no+".png"} alt="3d-structure"></img></td>
                     </tr>
                     <tr>
                         <td className='compound-heading' ><h4>PUBCHEM ID</h4></td>

@@ -7,11 +7,20 @@ import ShowLess from '../Compounds/ShowLess/ShowLess';
 import { Player } from '@lottiefiles/react-lottie-player';
 import ReactPaginate from "react-paginate";
 import SearchBar from "./SearchBar";
+import Axios from 'axios';
 
 
 function SearchCompounds() {
 
 const [data, setData] = useState([]);
+
+useEffect( ()=>{
+    Axios.get("http://localhost:5000/getdata").then((response)=>{
+        console.log(response.data);
+        setData(response.data);
+})
+},[])// eslint-disable-line react-hooks/exhaustive-deps
+
 const [filterNo , setFilter] = useState(0);
 const getFilter = (filterId) => {
     setFilter(filterId)
@@ -21,7 +30,7 @@ const getFilter = (filterId) => {
 const placeholderName="Enter Accession NO/Compound Name/Pubchem ID/Smiles/Inchl/Origin";
 const getData=()=>{
 
-    const db = JSON.parse(localStorage.getItem('data'));
+    const db = data;
     const params = new URLSearchParams(window.location.search);
     const search_key = params.get('q');
     console.log(search_key+"");
