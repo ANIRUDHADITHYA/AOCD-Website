@@ -31,6 +31,8 @@ function Compounds() {
 
   const [filterNo , setFilter] = useState( params.id === 'PL' ? 1 : params.id === 'AS' ? 2 : params.id === 'AG' ? 3 : 0); 
 
+  console.log(setFilter);
+
   
   
   const [pageNumber, setPageNumber] = useState(0);

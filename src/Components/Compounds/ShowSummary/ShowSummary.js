@@ -14,6 +14,7 @@ function ShowSummary() {
 
     const [url, setURL] = useState(process.env.PUBLIC_URL);
 
+    console.log(setURL);
     
 
     useEffect( ()=>{
